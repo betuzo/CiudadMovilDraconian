@@ -117,7 +117,7 @@
     RKObjectMapping *peticionCatalogoMapping = [RKObjectMapping mappingForClass:[PeticionCatalogo class]];
     [peticionCatalogoMapping mapRelationship:@"priceList" withMapping:priceListMapping];
     
-    NSLog(@"timeout %@", [[[RKObjectManager sharedManager] client] timeoutInterval]);
+    NSLog(@"timeout %f", [[[RKObjectManager sharedManager] client] timeoutInterval]);
     
     [[[RKObjectManager sharedManager] client] setTimeoutInterval:800];
     [[RKObjectManager sharedManager] setSerializationMIMEType:RKMIMETypeJSON];
