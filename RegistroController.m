@@ -20,6 +20,7 @@
 @synthesize txtEmail = _email;
 @synthesize txtNick = _nick;
 @synthesize txtPassword = _password;
+@synthesize contentViewRegister = _contentviewRegister;
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
@@ -58,7 +59,7 @@
     else
     {
         NSString *message = @"Los campos son obligatorios.";
-        UIAlertView *usageAlertView = [[UIAlertView alloc] initWithTitle:@"Registro" message:message delegate:self cancelButtonTitle:@"Acept" otherButtonTitles:nil];
+        UIAlertView *usageAlertView = [[UIAlertView alloc] initWithTitle:@"Registro" message:message delegate:self cancelButtonTitle:@"Aceptar" otherButtonTitles:nil];
         [usageAlertView show];
     }
 }
