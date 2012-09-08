@@ -30,6 +30,8 @@
 		593FADA415FB1ADD00CA156A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD7515FB18D800CA156A /* libRestKit.a */; };
 		593FAE1B15FB422000CA156A /* icono-taxi-si.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE1915FB422000CA156A /* icono-taxi-si.png */; };
 		593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */; };
+		59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827915FB501900A048A2 /* taxi-si-launch.png */; };
+		59FA827C15FB502500A048A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827B15FB502500A048A2 /* Default.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +116,8 @@
 		593FADA215FB1AC400CA156A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		593FAE1915FB422000CA156A /* icono-taxi-si.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si.png"; sourceTree = "<group>"; };
 		593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si-retina.png"; sourceTree = "<group>"; };
+		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
+		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,7 @@
 		593FA83815FAB3EF00CA156A = {
 			isa = PBXGroup;
 			children = (
+				59FA827B15FB502500A048A2 /* Default.png */,
 				593FA84D15FAB3EF00CA156A /* CiudadMovilDraconian */,
 				593FA86B15FAB3EF00CA156A /* CiudadMovilDraconianTests */,
 				593FA84615FAB3EF00CA156A /* Frameworks */,
@@ -252,6 +257,7 @@
 		593FAE1515FB405800CA156A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				59FA827915FB501900A048A2 /* taxi-si-launch.png */,
 				593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */,
 				593FAE1915FB422000CA156A /* icono-taxi-si.png */,
 			);
@@ -394,6 +400,8 @@
 				593FA85E15FAB3EF00CA156A /* LoginController.xib in Resources */,
 				593FAE1B15FB422000CA156A /* icono-taxi-si.png in Resources */,
 				593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */,
+				59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */,
+				59FA827C15FB502500A048A2 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
