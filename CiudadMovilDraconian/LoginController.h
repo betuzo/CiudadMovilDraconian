@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
+#import "MainTabViewController.h"
 
 @interface LoginController : UIViewController<RKObjectLoaderDelegate,UITextFieldDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *txtUsuario;
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+-(IBAction)presentHomeView:(id)sender;
 
 - (void) moveToTopFields;
 - (void) moveToTopOriginFields;
