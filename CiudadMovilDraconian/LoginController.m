@@ -177,6 +177,7 @@
     [self setTxtUsuario:nil];
     [self setTxtPassword:nil];
     [self setContentView:nil];
+    
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -190,10 +191,10 @@
 {
 	[UIView animateWithDuration:1.5
 						  delay:0.05
-						options: UIViewAnimationCurveEaseOut
+						options: UIViewContentModeCenter
 					 animations:^{
 						 
-						 [_contentView setFrame:CGRectMake(60,120, _contentView.bounds.size.width, _contentView.bounds.size.height)];
+						 [_contentView setFrame:CGRectMake(80,110, _contentView.bounds.size.width, _contentView.bounds.size.height)];
 						 
 						 
 						 
@@ -207,10 +208,10 @@
 {
 	[UIView animateWithDuration:1.5
 						  delay:0.05
-						options: UIViewAnimationCurveEaseOut
+						options: UIViewContentModeCenter
 					 animations:^{
 						 
-						 [_contentView setFrame:CGRectMake(90,180, _contentView.bounds.size.width,_contentView.bounds.size.height)];
+						 [_contentView setFrame:CGRectMake(80,164, _contentView.bounds.size.width,_contentView.bounds.size.height)];
 						 
 						 
 						 
@@ -245,10 +246,23 @@
 }
 
 
--(IBAction)editingEnded:(id)sender
+-(IBAction)presentHomeView:(id)sender
 {
-    [sender resignFirstResponder]; 
+    if (![[_txtUsuario text] isEqual:@""]
+        && ![[_txtPassword text] isEqual:@""])
+    {
+        MainTabViewController *mainViewController = [[MainTabViewController alloc] initWithNibName:@"MainTabViewController" bundle:nil];
+        [self presentModalViewController:mainViewController animated:YES];
+    }
+    else
+    {
+        NSString *message = @"Id user and password, please";
+        UIAlertView *usageAlertView = [[UIAlertView alloc] initWithTitle:@"Login" message:message delegate:self cancelButtonTitle:@"Acept" otherButtonTitles:nil];
+        [usageAlertView show];   
+    }
+
 }
+
 
 #pragma mark - Touches Handling
 

@@ -32,6 +32,8 @@
 		593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */; };
 		59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827915FB501900A048A2 /* taxi-si-launch.png */; };
 		59FA827C15FB502500A048A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827B15FB502500A048A2 /* Default.png */; };
+		59FA828015FB7D4500A048A2 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA827E15FB7D4500A048A2 /* MainTabViewController.m */; };
+		59FA828115FB7D4500A048A2 /* MainTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827F15FB7D4500A048A2 /* MainTabViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +120,9 @@
 		593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si-retina.png"; sourceTree = "<group>"; };
 		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
 		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		59FA827D15FB7D4500A048A2 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
+		59FA827E15FB7D4500A048A2 /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
+		59FA827F15FB7D4500A048A2 /* MainTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +273,7 @@
 			isa = PBXGroup;
 			children = (
 				593FA85C15FAB3EF00CA156A /* LoginController.xib */,
+				59FA827F15FB7D4500A048A2 /* MainTabViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -277,6 +283,8 @@
 			children = (
 				593FA85915FAB3EF00CA156A /* LoginController.h */,
 				593FA85A15FAB3EF00CA156A /* LoginController.m */,
+				59FA827D15FB7D4500A048A2 /* MainTabViewController.h */,
+				59FA827E15FB7D4500A048A2 /* MainTabViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -402,6 +410,7 @@
 				593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */,
 				59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */,
 				59FA827C15FB502500A048A2 /* Default.png in Resources */,
+				59FA828115FB7D4500A048A2 /* MainTabViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +448,7 @@
 				593FA85415FAB3EF00CA156A /* main.m in Sources */,
 				593FA85815FAB3EF00CA156A /* AppDelegate.m in Sources */,
 				593FA85B15FAB3EF00CA156A /* LoginController.m in Sources */,
+				59FA828015FB7D4500A048A2 /* MainTabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
