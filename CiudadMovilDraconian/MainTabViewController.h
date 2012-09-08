@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ParentTaxiSiViewController.h"
+#import "ParentMiViajeViewController.h"
+#import "ParentConfigViewController.h"
 
 @interface MainTabViewController : UIViewController
+
+@property (nonatomic , strong) UITabBarController *mainTabBarController;
 
 @end
