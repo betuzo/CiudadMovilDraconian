@@ -97,7 +97,7 @@
 - (void)loadTimeline
 {
     // Load the object model via RestKit
-    RKObjectMapping *productoMapping = [RKObjectMapping mappingForClass:[Producto class]];
+    /*RKObjectMapping *productoMapping = [RKObjectMapping mappingForClass:[Producto class]];
     [productoMapping mapKeyPath:@"ProductId" toAttribute:@"productId"];
     [productoMapping mapKeyPath:@"name" toAttribute:@"name"];
     [productoMapping mapKeyPath:@"description" toAttribute:@"description"];
@@ -128,7 +128,7 @@
     RKObjectManager *objectManager = [RKObjectManager sharedManager];
     objectManager.client.baseURL = [RKURL URLWithString:@"http://localhost:8080"];
     [[RKObjectManager sharedManager].mappingProvider setObjectMapping:peticionCatalogoMapping forKeyPath:@"/json-iPad/shoppingCart/getCatalogProduct"];
-    [objectManager loadObjectsAtResourcePath:@"/json-iPad/shoppingCart/getCatalogProduct" delegate:self];
+    [objectManager loadObjectsAtResourcePath:@"/json-iPad/shoppingCart/getCatalogProduct" delegate:self];*/
 }
 
 #pragma mark RKObjectLoaderDelegate methods
@@ -187,61 +187,20 @@
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
 
-- (void) moveToTopFields
-{
-	[UIView animateWithDuration:1.5
-						  delay:0.05
-						options: UIViewContentModeCenter
-					 animations:^{
-						 
-						 [_contentView setFrame:CGRectMake(80,110, _contentView.bounds.size.width, _contentView.bounds.size.height)];
-						 
-						 
-						 
-					 } 
-					 completion:^(BOOL finished){
-						 
-					 }];
-}
-
-- (void) moveToTopOriginFields
-{
-	[UIView animateWithDuration:1.5
-						  delay:0.05
-						options: UIViewContentModeCenter
-					 animations:^{
-						 
-						 [_contentView setFrame:CGRectMake(80,164, _contentView.bounds.size.width,_contentView.bounds.size.height)];
-						 
-						 
-						 
-					 } 
-					 completion:^(BOOL finished){
-						 
-					 }];
-}
-
 #pragma mark - View lifecycle
 - (void)textFieldDidBeginEditing:(UITextField *)textField
 {
-	[self moveToTopFields];
 }
 
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
 	if (textField == _txtUsuario ) {
-		
 		[_txtPassword becomeFirstResponder];
-		
 	}
 	else if (textField == _txtPassword){
-		
 		[_txtPassword resignFirstResponder];
-		[self moveToTopOriginFields];
-		
 	}
-	
 	return NO;
 }
 
@@ -268,12 +227,8 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-	
 	[_txtUsuario resignFirstResponder];
 	[_txtPassword resignFirstResponder];
-	[self moveToTopOriginFields];
-	
-    
 }
 
 @end

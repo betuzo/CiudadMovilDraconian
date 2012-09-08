@@ -18,8 +18,8 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     
-    RKLogConfigureByName("RestKit/Network*", RKLogLevelTrace);
-    RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelTrace);
+    RKLogConfigureByName("RestKit/Network*", RKLogLevelError);
+    RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelError);
     
     // Initialize RestKit
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURLString:@"http://localhost:8080"];
