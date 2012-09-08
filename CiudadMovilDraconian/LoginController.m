@@ -215,11 +215,16 @@
     }
     else
     {
-        NSString *message = @"Id user and password, please";
+        NSString *message = @"Los campos son obligatorios.";
         UIAlertView *usageAlertView = [[UIAlertView alloc] initWithTitle:@"Login" message:message delegate:self cancelButtonTitle:@"Acept" otherButtonTitles:nil];
         [usageAlertView show];   
     }
+}
 
+-(IBAction)registerView:(id)sender
+{
+    RegistroController *registroView = [[RegistroController alloc] initWithNibName:nil bundle:nil];
+    [self presentModalViewController:registroView animated:YES];
 }
 
 

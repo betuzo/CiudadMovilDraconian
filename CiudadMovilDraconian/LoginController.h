@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
 #import "MainTabViewController.h"
+#import "RegistroController.h"
 
 @interface LoginController : UIViewController<RKObjectLoaderDelegate,UITextFieldDelegate>
 
@@ -16,5 +17,6 @@
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 -(IBAction)presentHomeView:(id)sender;
+-(IBAction)registerView:(id)sender;
 
 @end
