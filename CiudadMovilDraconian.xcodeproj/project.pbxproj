@@ -13,13 +13,23 @@
 		593FA85215FAB3EF00CA156A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 593FA85015FAB3EF00CA156A /* InfoPlist.strings */; };
 		593FA85415FAB3EF00CA156A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 593FA85315FAB3EF00CA156A /* main.m */; };
 		593FA85815FAB3EF00CA156A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 593FA85715FAB3EF00CA156A /* AppDelegate.m */; };
-		593FA85B15FAB3EF00CA156A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593FA85A15FAB3EF00CA156A /* ViewController.m */; };
-		593FA85E15FAB3EF00CA156A /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593FA85C15FAB3EF00CA156A /* ViewController.xib */; };
+		593FA85B15FAB3EF00CA156A /* LoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593FA85A15FAB3EF00CA156A /* LoginController.m */; };
+		593FA85E15FAB3EF00CA156A /* LoginController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593FA85C15FAB3EF00CA156A /* LoginController.xib */; };
 		593FA86615FAB3EF00CA156A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FA86515FAB3EF00CA156A /* SenTestingKit.framework */; };
 		593FA86715FAB3EF00CA156A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FA84715FAB3EF00CA156A /* UIKit.framework */; };
 		593FA86815FAB3EF00CA156A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FA84915FAB3EF00CA156A /* Foundation.framework */; };
 		593FA87015FAB3EF00CA156A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 593FA86E15FAB3EF00CA156A /* InfoPlist.strings */; };
 		593FA87315FAB3EF00CA156A /* CiudadMovilDraconianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 593FA87215FAB3EF00CA156A /* CiudadMovilDraconianTests.m */; };
+		593FAD9715FB1A0600CA156A /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD9615FB1A0600CA156A /* CFNetwork.framework */; };
+		593FAD9915FB1A6800CA156A /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD9815FB1A6800CA156A /* CoreData.framework */; };
+		593FAD9B15FB1A7B00CA156A /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD9A15FB1A7B00CA156A /* Security.framework */; };
+		593FAD9D15FB1A8B00CA156A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD9C15FB1A8B00CA156A /* MobileCoreServices.framework */; };
+		593FAD9F15FB1A9700CA156A /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD9E15FB1A9700CA156A /* SystemConfiguration.framework */; };
+		593FADA115FB1AB800CA156A /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FADA015FB1AB800CA156A /* libxml2.dylib */; };
+		593FADA315FB1AC400CA156A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FADA215FB1AC400CA156A /* QuartzCore.framework */; };
+		593FADA415FB1ADD00CA156A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD7515FB18D800CA156A /* libRestKit.a */; };
+		593FAE1B15FB422000CA156A /* icono-taxi-si.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE1915FB422000CA156A /* icono-taxi-si.png */; };
+		593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,48 @@
 			proxyType = 1;
 			remoteGlobalIDString = 593FA84215FAB3EF00CA156A;
 			remoteInfo = CiudadMovilDraconian;
+		};
+		593FAD7415FB18D800CA156A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593FAD6915FB18D800CA156A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		593FAD7615FB18D800CA156A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593FAD6915FB18D800CA156A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		593FAD7815FB18D800CA156A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593FAD6915FB18D800CA156A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		593FAD7A15FB18D800CA156A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593FAD6915FB18D800CA156A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		593FAD7C15FB18D800CA156A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593FAD6915FB18D800CA156A /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		593FAD9415FB19EE00CA156A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 593FAD6915FB18D800CA156A /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -43,15 +95,25 @@
 		593FA85515FAB3EF00CA156A /* CiudadMovilDraconian-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CiudadMovilDraconian-Prefix.pch"; sourceTree = "<group>"; };
 		593FA85615FAB3EF00CA156A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		593FA85715FAB3EF00CA156A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		593FA85915FAB3EF00CA156A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		593FA85A15FAB3EF00CA156A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		593FA85D15FAB3EF00CA156A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		593FA85915FAB3EF00CA156A /* LoginController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginController.h; sourceTree = "<group>"; };
+		593FA85A15FAB3EF00CA156A /* LoginController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginController.m; sourceTree = "<group>"; };
+		593FA85D15FAB3EF00CA156A /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginController.xib; sourceTree = "<group>"; };
 		593FA86415FAB3EF00CA156A /* CiudadMovilDraconianTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CiudadMovilDraconianTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		593FA86515FAB3EF00CA156A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		593FA86D15FAB3EF00CA156A /* CiudadMovilDraconianTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CiudadMovilDraconianTests-Info.plist"; sourceTree = "<group>"; };
 		593FA86F15FAB3EF00CA156A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		593FA87115FAB3EF00CA156A /* CiudadMovilDraconianTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CiudadMovilDraconianTests.h; sourceTree = "<group>"; };
 		593FA87215FAB3EF00CA156A /* CiudadMovilDraconianTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CiudadMovilDraconianTests.m; sourceTree = "<group>"; };
+		593FAD6915FB18D800CA156A /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKit/RestKit.xcodeproj; sourceTree = "<group>"; };
+		593FAD9615FB1A0600CA156A /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		593FAD9815FB1A6800CA156A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		593FAD9A15FB1A7B00CA156A /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		593FAD9C15FB1A8B00CA156A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		593FAD9E15FB1A9700CA156A /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		593FADA015FB1AB800CA156A /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		593FADA215FB1AC400CA156A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		593FAE1915FB422000CA156A /* icono-taxi-si.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si.png"; sourceTree = "<group>"; };
+		593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si-retina.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +121,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				593FADA415FB1ADD00CA156A /* libRestKit.a in Frameworks */,
+				593FADA315FB1AC400CA156A /* QuartzCore.framework in Frameworks */,
+				593FADA115FB1AB800CA156A /* libxml2.dylib in Frameworks */,
+				593FAD9F15FB1A9700CA156A /* SystemConfiguration.framework in Frameworks */,
+				593FAD9D15FB1A8B00CA156A /* MobileCoreServices.framework in Frameworks */,
+				593FAD9B15FB1A7B00CA156A /* Security.framework in Frameworks */,
+				593FAD9915FB1A6800CA156A /* CoreData.framework in Frameworks */,
+				593FAD9715FB1A0600CA156A /* CFNetwork.framework in Frameworks */,
 				593FA84815FAB3EF00CA156A /* UIKit.framework in Frameworks */,
 				593FA84A15FAB3EF00CA156A /* Foundation.framework in Frameworks */,
 				593FA84C15FAB3EF00CA156A /* CoreGraphics.framework in Frameworks */,
@@ -85,6 +155,7 @@
 				593FA86B15FAB3EF00CA156A /* CiudadMovilDraconianTests */,
 				593FA84615FAB3EF00CA156A /* Frameworks */,
 				593FA84415FAB3EF00CA156A /* Products */,
+				593FAD6915FB18D800CA156A /* RestKit.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +171,13 @@
 		593FA84615FAB3EF00CA156A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				593FADA215FB1AC400CA156A /* QuartzCore.framework */,
+				593FADA015FB1AB800CA156A /* libxml2.dylib */,
+				593FAD9E15FB1A9700CA156A /* SystemConfiguration.framework */,
+				593FAD9C15FB1A8B00CA156A /* MobileCoreServices.framework */,
+				593FAD9A15FB1A7B00CA156A /* Security.framework */,
+				593FAD9815FB1A6800CA156A /* CoreData.framework */,
+				593FAD9615FB1A0600CA156A /* CFNetwork.framework */,
 				593FA84715FAB3EF00CA156A /* UIKit.framework */,
 				593FA84915FAB3EF00CA156A /* Foundation.framework */,
 				593FA84B15FAB3EF00CA156A /* CoreGraphics.framework */,
@@ -111,11 +189,12 @@
 		593FA84D15FAB3EF00CA156A /* CiudadMovilDraconian */ = {
 			isa = PBXGroup;
 			children = (
+				59FA827815FB495F00A048A2 /* Controller */,
+				59FA827715FB495000A048A2 /* View */,
+				593FAE1515FB405800CA156A /* Resource */,
+				593FAE0315FB396900CA156A /* Sync */,
 				593FA85615FAB3EF00CA156A /* AppDelegate.h */,
 				593FA85715FAB3EF00CA156A /* AppDelegate.m */,
-				593FA85915FAB3EF00CA156A /* ViewController.h */,
-				593FA85A15FAB3EF00CA156A /* ViewController.m */,
-				593FA85C15FAB3EF00CA156A /* ViewController.xib */,
 				593FA84E15FAB3EF00CA156A /* Supporting Files */,
 			);
 			path = CiudadMovilDraconian;
@@ -151,6 +230,51 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		593FAD6A15FB18D800CA156A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				593FAD7515FB18D800CA156A /* libRestKit.a */,
+				593FAD7715FB18D800CA156A /* RestKitTests.octest */,
+				593FAD7915FB18D800CA156A /* RestKit.framework */,
+				593FAD7B15FB18D800CA156A /* RestKitFrameworkTests.octest */,
+				593FAD7D15FB18D800CA156A /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		593FAE0315FB396900CA156A /* Sync */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Sync;
+			sourceTree = "<group>";
+		};
+		593FAE1515FB405800CA156A /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */,
+				593FAE1915FB422000CA156A /* icono-taxi-si.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		59FA827715FB495000A048A2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				593FA85C15FAB3EF00CA156A /* LoginController.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		59FA827815FB495F00A048A2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				593FA85915FAB3EF00CA156A /* LoginController.h */,
+				593FA85A15FAB3EF00CA156A /* LoginController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -165,6 +289,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				593FAD9515FB19EE00CA156A /* PBXTargetDependency */,
 			);
 			name = CiudadMovilDraconian;
 			productName = CiudadMovilDraconian;
@@ -208,6 +333,12 @@
 			mainGroup = 593FA83815FAB3EF00CA156A;
 			productRefGroup = 593FA84415FAB3EF00CA156A /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 593FAD6A15FB18D800CA156A /* Products */;
+					ProjectRef = 593FAD6915FB18D800CA156A /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				593FA84215FAB3EF00CA156A /* CiudadMovilDraconian */,
@@ -216,13 +347,53 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		593FAD7515FB18D800CA156A /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = 593FAD7415FB18D800CA156A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		593FAD7715FB18D800CA156A /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = 593FAD7615FB18D800CA156A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		593FAD7915FB18D800CA156A /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = 593FAD7815FB18D800CA156A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		593FAD7B15FB18D800CA156A /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = 593FAD7A15FB18D800CA156A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		593FAD7D15FB18D800CA156A /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = 593FAD7C15FB18D800CA156A /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		593FA84115FAB3EF00CA156A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				593FA85215FAB3EF00CA156A /* InfoPlist.strings in Resources */,
-				593FA85E15FAB3EF00CA156A /* ViewController.xib in Resources */,
+				593FA85E15FAB3EF00CA156A /* LoginController.xib in Resources */,
+				593FAE1B15FB422000CA156A /* icono-taxi-si.png in Resources */,
+				593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +430,7 @@
 			files = (
 				593FA85415FAB3EF00CA156A /* main.m in Sources */,
 				593FA85815FAB3EF00CA156A /* AppDelegate.m in Sources */,
-				593FA85B15FAB3EF00CA156A /* ViewController.m in Sources */,
+				593FA85B15FAB3EF00CA156A /* LoginController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +450,11 @@
 			target = 593FA84215FAB3EF00CA156A /* CiudadMovilDraconian */;
 			targetProxy = 593FA86915FAB3EF00CA156A /* PBXContainerItemProxy */;
 		};
+		593FAD9515FB19EE00CA156A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = 593FAD9415FB19EE00CA156A /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -290,12 +466,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		593FA85C15FAB3EF00CA156A /* ViewController.xib */ = {
+		593FA85C15FAB3EF00CA156A /* LoginController.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				593FA85D15FAB3EF00CA156A /* en */,
 			);
-			name = ViewController.xib;
+			name = LoginController.xib;
 			sourceTree = "<group>";
 		};
 		593FA86E15FAB3EF00CA156A /* InfoPlist.strings */ = {
@@ -329,7 +505,12 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -347,8 +528,13 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$(BUILT_PRODUCTS_DIR)/../../Headers\"";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -357,6 +543,10 @@
 		593FA87715FAB3EF00CA156A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RestKit/Tests/Vendor/OCHamcrest\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CiudadMovilDraconian/CiudadMovilDraconian-Prefix.pch";
 				INFOPLIST_FILE = "CiudadMovilDraconian/CiudadMovilDraconian-Info.plist";
@@ -368,6 +558,10 @@
 		593FA87815FAB3EF00CA156A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/RestKit/Tests/Vendor/OCHamcrest\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CiudadMovilDraconian/CiudadMovilDraconian-Prefix.pch";
 				INFOPLIST_FILE = "CiudadMovilDraconian/CiudadMovilDraconian-Info.plist";
@@ -429,6 +623,7 @@
 				593FA87815FAB3EF00CA156A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		593FA87915FAB3EF00CA156A /* Build configuration list for PBXNativeTarget "CiudadMovilDraconianTests" */ = {
 			isa = XCConfigurationList;
@@ -437,6 +632,7 @@
 				593FA87B15FAB3EF00CA156A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
