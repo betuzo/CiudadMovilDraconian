@@ -19,7 +19,5 @@
 @property (nonatomic, strong) NSString *licencia;
 @property (nonatomic, strong) TSTarjeton *tarjeton;
 @property (nonatomic, strong) TSTaxi *taxi;
-@property (nonatomic, strong) NSNumber *longitude;
-@property (nonatomic, strong) NSNumber *latitude;
 
 @end

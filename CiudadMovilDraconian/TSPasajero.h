@@ -1,5 +1,5 @@
 //
-//  TSTaxi.h
+//  TSPasajero.h
 //  CiudadMovilDraconian
 //
 //  Created by Mobiik on 08/09/12.
@@ -8,13 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TSTaxi : NSObject
+@interface TSPasajero : NSObject
 
 @property (nonatomic, strong) UIImage *type;
-@property (nonatomic, strong) NSString *tipo;
-@property (nonatomic, strong) NSString *placas;
+@property (nonatomic, strong) NSString *nickname;
+@property (nonatomic, strong) NSString *password;
+@property (nonatomic, strong) NSString *nombre;
+@property (nonatomic, strong) NSString *apellido;
+@property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSNumber *longitude;
 @property (nonatomic, strong) NSNumber *latitude;
-@property (nonatomic) BOOL compartir;
 
 @end

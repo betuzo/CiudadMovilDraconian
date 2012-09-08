@@ -10,6 +10,7 @@
 
 @implementation TSTaxi
 
+@synthesize type = _type;
 @synthesize tipo = _tipo;
 @synthesize placas = _placas;
 @synthesize longitude = _longitude;

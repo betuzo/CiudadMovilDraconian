@@ -10,4 +10,9 @@
 
 @interface TSObra : NSObject
 
+@property (nonatomic, strong) UIImage *type;
+@property (nonatomic, strong) NSString *description;
+@property (nonatomic, strong) NSNumber *longitude;
+@property (nonatomic, strong) NSNumber *latitude;
+
 @end

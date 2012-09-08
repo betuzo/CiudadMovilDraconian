@@ -10,12 +10,13 @@
 
 @implementation TSUser
 
+@synthesize type = _type;
 @synthesize nickname = _nickname;
 @synthesize password = _password;
-@synthesize nombre = _nombre;
-@synthesize apellido = _apellido;
-@synthesize email = _email;
 @synthesize longitude = _longitude;
 @synthesize latitude = _latitude;
+@synthesize compartir = _compartir;
+@synthesize verIncidentes = _verIncidentes;
+@synthesize verComprtidos = _verComprtidos;
 
 @end
