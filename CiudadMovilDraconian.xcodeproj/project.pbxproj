@@ -190,7 +190,7 @@
 		5989FC8015FBEFD2004690EE /* WebLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebLoad.h; sourceTree = "<group>"; };
 		5989FC8115FBEFD2004690EE /* WebLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebLoad.m; sourceTree = "<group>"; };
 		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
-		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		59FA827D15FB7D4500A048A2 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
 		59FA827E15FB7D4500A048A2 /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
 		59FA827F15FB7D4500A048A2 /* MainTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabViewController.xib; sourceTree = "<group>"; };
@@ -271,8 +271,6 @@
 		593FA83815FAB3EF00CA156A = {
 			isa = PBXGroup;
 			children = (
-				59FA82B815FB8C6800A048A2 /* MapKit.framework */,
-				59FA827B15FB502500A048A2 /* Default.png */,
 				593FA84D15FAB3EF00CA156A /* CiudadMovilDraconian */,
 				593FA86B15FAB3EF00CA156A /* CiudadMovilDraconianTests */,
 				593FA84615FAB3EF00CA156A /* Frameworks */,
@@ -293,6 +291,7 @@
 		593FA84615FAB3EF00CA156A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59FA82B815FB8C6800A048A2 /* MapKit.framework */,
 				593FADA215FB1AC400CA156A /* QuartzCore.framework */,
 				593FADA015FB1AB800CA156A /* libxml2.dylib */,
 				593FAD9E15FB1A9700CA156A /* SystemConfiguration.framework */,
@@ -380,6 +379,7 @@
 		593FAE1515FB405800CA156A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				59FA827B15FB502500A048A2 /* Default.png */,
 				5989FC3C15FBA373004690EE /* tab-config.png */,
 				5989FC3D15FBA373004690EE /* tab-mi-viaje.png */,
 				5989FC3E15FBA373004690EE /* tab-taxi-si.png */,

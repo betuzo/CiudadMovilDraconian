@@ -15,6 +15,5 @@
 @property (nonatomic, strong) NSString *placas;
 @property (nonatomic, strong) NSNumber *longitude;
 @property (nonatomic, strong) NSNumber *latitude;
-@property (nonatomic) BOOL compartir;
 
 @end

@@ -100,22 +100,56 @@ static SyncSingleton *instanciaHelper = nil;
 	return isWebServerReachable;
 }
 
-- (void) initSync
-{
-    _isFinish = YES;
-    [syncTimer fire];
-}
-
 - (void) endSync
 {
-    _isFinish = NO;
     [syncTimer invalidate];
+    _isFinish = NO;
+}
+
+- (void) initSync
+{
+    [syncTimer fire];
+    _isFinish = YES;
 }
 
 - (void) dictionaryMappingByResource
 {
     NSDictionary * dicByMapping = [[NSDictionary alloc] init];
     TSRequest * peticion = [[TSRequest alloc] init];
+    
+    // Load the object model via RestKit
+    RKObjectMapping *productoMapping = [RKObjectMapping mappingForClass:[Producto class]];
+    [productoMapping mapKeyPath:@"ProductId" toAttribute:@"productId"];
+    [productoMapping mapKeyPath:@"name" toAttribute:@"name"];
+    [productoMapping mapKeyPath:@"description" toAttribute:@"description"];
+    [productoMapping mapKeyPath:@"category" toAttribute:@"category"];
+    [productoMapping mapKeyPath:@"subcategory" toAttribute:@"subcategory"];
+    [productoMapping mapKeyPath:@"Info" toAttribute:@"info"];
+    [productoMapping mapKeyPath:@"Picture" toAttribute:@"picture"];
+     
+    RKObjectMapping *catalogMapping = [RKObjectMapping mappingForClass:[Catalog class]];
+    [catalogMapping mapKeyPath:@"id" toAttribute:@"idt"];
+    [catalogMapping mapRelationship:@"products" withMapping:productoMapping];
+     
+    RKObjectMapping *priceListMapping = [RKObjectMapping mappingForClass:[PriceList class]];
+    [priceListMapping mapKeyPath:@"xmlns" toAttribute:@"xmlns"];
+    [priceListMapping mapRelationship:@"catalogs" withMapping:catalogMapping];
+     
+    RKObjectMapping *peticionCatalogoMapping = [RKObjectMapping mappingForClass:[PeticionCatalogo class]];
+    [peticionCatalogoMapping mapRelationship:@"priceList" withMapping:priceListMapping];
+     
+    NSLog(@"timeout %f", [[[RKObjectManager sharedManager] client] timeoutInterval]);
+     
+    [[[RKObjectManager sharedManager] client] setTimeoutInterval:800];
+    [[RKObjectManager sharedManager] setSerializationMIMEType:RKMIMETypeJSON];
+    [[RKParserRegistry 
+    sharedRegistry] setParserClass:[RKJSONParserJSONKit class] 
+    forMIMEType:@"text/html"];
+     
+    RKObjectManager *objectManager = [RKObjectManager sharedManager];
+    objectManager.client.baseURL = [RKURL URLWithString:@"http://localhost:8080"];
+    [[RKObjectManager sharedManager].mappingProvider setObjectMapping:peticionCatalogoMapping forKeyPath:@"/json-iPad/shoppingCart/getCatalogProduct"];
+    [objectManager loadObjectsAtResourcePath:@"/json-iPad/shoppingCart/getCatalogProduct" delegate:self];
     
     [dicByMapping setValue:peticion forKey:RESOURCE_FOR_SECURE];
 }
