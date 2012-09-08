@@ -14,6 +14,8 @@
 
 @implementation ParentTaxiSiViewController
 
+@synthesize taxiSiNavigationController = _taxiSiNavigationController;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,16 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    TaxiSiViewController *controller = [[TaxiSiViewController alloc]initWithNibName:@"TaxiSiViewController" bundle:nil];
+    
+    _taxiSiNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    
+    [_taxiSiNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation-bar"] forBarMetrics:UIBarMetricsDefault];
+    
+	[_taxiSiNavigationController.view setFrame:self.view.bounds];
+    
+	[self.view addSubview:_taxiSiNavigationController.view];
+
 }
 
 - (void)viewDidUnload

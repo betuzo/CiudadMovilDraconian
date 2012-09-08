@@ -17,7 +17,4 @@
 @property (strong, nonatomic) IBOutlet UIView *contentView;
 -(IBAction)presentHomeView:(id)sender;
 
-- (void) moveToTopFields;
-- (void) moveToTopOriginFields;
-
 @end

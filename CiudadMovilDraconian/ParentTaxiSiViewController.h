@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TaxiSiViewController.h"
 
 @interface ParentTaxiSiViewController : UIViewController
+
+@property (nonatomic,strong) UINavigationController *taxiSiNavigationController;
 
 @end

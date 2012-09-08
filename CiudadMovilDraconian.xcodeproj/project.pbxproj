@@ -30,6 +30,20 @@
 		593FADA415FB1ADD00CA156A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD7515FB18D800CA156A /* libRestKit.a */; };
 		593FAE1B15FB422000CA156A /* icono-taxi-si.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE1915FB422000CA156A /* icono-taxi-si.png */; };
 		593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */; };
+		5989FC3815FB9835004690EE /* login-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3715FB9835004690EE /* login-background.png */; };
+		5989FC3B15FBA33D004690EE /* navigation-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3A15FBA33D004690EE /* navigation-bar.png */; };
+		5989FC3F15FBA373004690EE /* tab-config.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3C15FBA373004690EE /* tab-config.png */; };
+		5989FC4015FBA373004690EE /* tab-mi-viaje.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3D15FBA373004690EE /* tab-mi-viaje.png */; };
+		5989FC4115FBA373004690EE /* tab-taxi-si.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3E15FBA373004690EE /* tab-taxi-si.png */; };
+		5989FC4415FBA966004690EE /* TSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4315FBA966004690EE /* TSRequest.m */; };
+		5989FC4A15FBAA9F004690EE /* TaxiSiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4915FBAA9F004690EE /* TaxiSiService.m */; };
+		5989FC4E15FBAB6A004690EE /* TSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4D15FBAB6A004690EE /* TSUser.m */; };
+		5989FC5115FBAB81004690EE /* TSTaxi.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5015FBAB81004690EE /* TSTaxi.m */; };
+		5989FC5415FBACE2004690EE /* TSIncidente.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5315FBACE2004690EE /* TSIncidente.m */; };
+		5989FC5715FBACF2004690EE /* TSObra.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5615FBACF2004690EE /* TSObra.m */; };
+		5989FC5A15FBAD18004690EE /* TSSitio.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5915FBAD18004690EE /* TSSitio.m */; };
+		5989FC5D15FBAEAB004690EE /* TSChofer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5C15FBAEAB004690EE /* TSChofer.m */; };
+		5989FC6015FBAF57004690EE /* TSTarjeton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5F15FBAF57004690EE /* TSTarjeton.m */; };
 		59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827915FB501900A048A2 /* taxi-si-launch.png */; };
 		59FA827C15FB502500A048A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827B15FB502500A048A2 /* Default.png */; };
 		59FA828015FB7D4500A048A2 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA827E15FB7D4500A048A2 /* MainTabViewController.m */; };
@@ -46,6 +60,9 @@
 		59FA82A215FB80F800A048A2 /* ParentTaxiSiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA82A015FB80F800A048A2 /* ParentTaxiSiViewController.xib */; };
 		59FA82A615FB810B00A048A2 /* TaxiSiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA82A415FB810B00A048A2 /* TaxiSiViewController.m */; };
 		59FA82A715FB810B00A048A2 /* TaxiSiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA82A515FB810B00A048A2 /* TaxiSiViewController.xib */; };
+		59FA82AA15FB87DF00A048A2 /* CiudadPinAnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA82A915FB87DF00A048A2 /* CiudadPinAnotation.m */; };
+		59FA82B915FB8C6900A048A2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FA82B815FB8C6800A048A2 /* MapKit.framework */; };
+		59FA82BD15FB967300A048A2 /* login-boton-entrar.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA82BA15FB967300A048A2 /* login-boton-entrar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +147,29 @@
 		593FADA215FB1AC400CA156A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		593FAE1915FB422000CA156A /* icono-taxi-si.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si.png"; sourceTree = "<group>"; };
 		593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si-retina.png"; sourceTree = "<group>"; };
+		5989FC3715FB9835004690EE /* login-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-background.png"; sourceTree = "<group>"; };
+		5989FC3A15FBA33D004690EE /* navigation-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-bar.png"; sourceTree = "<group>"; };
+		5989FC3C15FBA373004690EE /* tab-config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-config.png"; sourceTree = "<group>"; };
+		5989FC3D15FBA373004690EE /* tab-mi-viaje.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-mi-viaje.png"; sourceTree = "<group>"; };
+		5989FC3E15FBA373004690EE /* tab-taxi-si.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-taxi-si.png"; sourceTree = "<group>"; };
+		5989FC4215FBA966004690EE /* TSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRequest.h; sourceTree = "<group>"; };
+		5989FC4315FBA966004690EE /* TSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRequest.m; sourceTree = "<group>"; };
+		5989FC4815FBAA9F004690EE /* TaxiSiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxiSiService.h; sourceTree = "<group>"; };
+		5989FC4915FBAA9F004690EE /* TaxiSiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxiSiService.m; sourceTree = "<group>"; };
+		5989FC4C15FBAB6A004690EE /* TSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUser.h; sourceTree = "<group>"; };
+		5989FC4D15FBAB6A004690EE /* TSUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSUser.m; sourceTree = "<group>"; };
+		5989FC4F15FBAB81004690EE /* TSTaxi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTaxi.h; sourceTree = "<group>"; };
+		5989FC5015FBAB81004690EE /* TSTaxi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTaxi.m; sourceTree = "<group>"; };
+		5989FC5215FBACE2004690EE /* TSIncidente.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSIncidente.h; sourceTree = "<group>"; };
+		5989FC5315FBACE2004690EE /* TSIncidente.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSIncidente.m; sourceTree = "<group>"; };
+		5989FC5515FBACF2004690EE /* TSObra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSObra.h; sourceTree = "<group>"; };
+		5989FC5615FBACF2004690EE /* TSObra.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSObra.m; sourceTree = "<group>"; };
+		5989FC5815FBAD18004690EE /* TSSitio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSSitio.h; sourceTree = "<group>"; };
+		5989FC5915FBAD18004690EE /* TSSitio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSSitio.m; sourceTree = "<group>"; };
+		5989FC5B15FBAEAA004690EE /* TSChofer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSChofer.h; sourceTree = "<group>"; };
+		5989FC5C15FBAEAB004690EE /* TSChofer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSChofer.m; sourceTree = "<group>"; };
+		5989FC5E15FBAF57004690EE /* TSTarjeton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTarjeton.h; sourceTree = "<group>"; };
+		5989FC5F15FBAF57004690EE /* TSTarjeton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTarjeton.m; sourceTree = "<group>"; };
 		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
 		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		59FA827D15FB7D4500A048A2 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
@@ -153,6 +193,10 @@
 		59FA82A315FB810B00A048A2 /* TaxiSiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxiSiViewController.h; sourceTree = "<group>"; };
 		59FA82A415FB810B00A048A2 /* TaxiSiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxiSiViewController.m; sourceTree = "<group>"; };
 		59FA82A515FB810B00A048A2 /* TaxiSiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiSiViewController.xib; sourceTree = "<group>"; };
+		59FA82A815FB87DF00A048A2 /* CiudadPinAnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadPinAnotation.h; sourceTree = "<group>"; };
+		59FA82A915FB87DF00A048A2 /* CiudadPinAnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadPinAnotation.m; sourceTree = "<group>"; };
+		59FA82B815FB8C6800A048A2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		59FA82BA15FB967300A048A2 /* login-boton-entrar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-boton-entrar.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +204,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59FA82B915FB8C6900A048A2 /* MapKit.framework in Frameworks */,
 				593FADA415FB1ADD00CA156A /* libRestKit.a in Frameworks */,
 				593FADA315FB1AC400CA156A /* QuartzCore.framework in Frameworks */,
 				593FADA115FB1AB800CA156A /* libxml2.dylib in Frameworks */,
@@ -190,6 +235,7 @@
 		593FA83815FAB3EF00CA156A = {
 			isa = PBXGroup;
 			children = (
+				59FA82B815FB8C6800A048A2 /* MapKit.framework */,
 				59FA827B15FB502500A048A2 /* Default.png */,
 				593FA84D15FAB3EF00CA156A /* CiudadMovilDraconian */,
 				593FA86B15FAB3EF00CA156A /* CiudadMovilDraconianTests */,
@@ -229,6 +275,8 @@
 		593FA84D15FAB3EF00CA156A /* CiudadMovilDraconian */ = {
 			isa = PBXGroup;
 			children = (
+				5989FC4B15FBAB35004690EE /* Domain */,
+				5989FC3915FB9A86004690EE /* Service */,
 				59FA827715FB495000A048A2 /* View */,
 				59FA827815FB495F00A048A2 /* Controller */,
 				593FAE1515FB405800CA156A /* Resource */,
@@ -292,11 +340,49 @@
 		593FAE1515FB405800CA156A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				5989FC3C15FBA373004690EE /* tab-config.png */,
+				5989FC3D15FBA373004690EE /* tab-mi-viaje.png */,
+				5989FC3E15FBA373004690EE /* tab-taxi-si.png */,
+				5989FC3A15FBA33D004690EE /* navigation-bar.png */,
+				59FA82BA15FB967300A048A2 /* login-boton-entrar.png */,
+				5989FC3715FB9835004690EE /* login-background.png */,
 				59FA827915FB501900A048A2 /* taxi-si-launch.png */,
 				593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */,
 				593FAE1915FB422000CA156A /* icono-taxi-si.png */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		5989FC3915FB9A86004690EE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				5989FC4815FBAA9F004690EE /* TaxiSiService.h */,
+				5989FC4915FBAA9F004690EE /* TaxiSiService.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		5989FC4B15FBAB35004690EE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				5989FC4215FBA966004690EE /* TSRequest.h */,
+				5989FC4315FBA966004690EE /* TSRequest.m */,
+				5989FC4C15FBAB6A004690EE /* TSUser.h */,
+				5989FC4D15FBAB6A004690EE /* TSUser.m */,
+				5989FC4F15FBAB81004690EE /* TSTaxi.h */,
+				5989FC5015FBAB81004690EE /* TSTaxi.m */,
+				5989FC5E15FBAF57004690EE /* TSTarjeton.h */,
+				5989FC5F15FBAF57004690EE /* TSTarjeton.m */,
+				5989FC5B15FBAEAA004690EE /* TSChofer.h */,
+				5989FC5C15FBAEAB004690EE /* TSChofer.m */,
+				5989FC5215FBACE2004690EE /* TSIncidente.h */,
+				5989FC5315FBACE2004690EE /* TSIncidente.m */,
+				5989FC5515FBACF2004690EE /* TSObra.h */,
+				5989FC5615FBACF2004690EE /* TSObra.m */,
+				5989FC5815FBAD18004690EE /* TSSitio.h */,
+				5989FC5915FBAD18004690EE /* TSSitio.m */,
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 		59FA827715FB495000A048A2 /* View */ = {
@@ -348,6 +434,8 @@
 				59FA829F15FB80F800A048A2 /* ParentTaxiSiViewController.m */,
 				59FA82A315FB810B00A048A2 /* TaxiSiViewController.h */,
 				59FA82A415FB810B00A048A2 /* TaxiSiViewController.m */,
+				59FA82A815FB87DF00A048A2 /* CiudadPinAnotation.h */,
+				59FA82A915FB87DF00A048A2 /* CiudadPinAnotation.m */,
 			);
 			name = TaxiSi;
 			sourceTree = "<group>";
@@ -529,6 +617,12 @@
 				59FA829D15FB80B500A048A2 /* MiViajeViewController.xib in Resources */,
 				59FA82A215FB80F800A048A2 /* ParentTaxiSiViewController.xib in Resources */,
 				59FA82A715FB810B00A048A2 /* TaxiSiViewController.xib in Resources */,
+				59FA82BD15FB967300A048A2 /* login-boton-entrar.png in Resources */,
+				5989FC3815FB9835004690EE /* login-background.png in Resources */,
+				5989FC3B15FBA33D004690EE /* navigation-bar.png in Resources */,
+				5989FC3F15FBA373004690EE /* tab-config.png in Resources */,
+				5989FC4015FBA373004690EE /* tab-mi-viaje.png in Resources */,
+				5989FC4115FBA373004690EE /* tab-taxi-si.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -573,6 +667,16 @@
 				59FA829C15FB80B500A048A2 /* MiViajeViewController.m in Sources */,
 				59FA82A115FB80F800A048A2 /* ParentTaxiSiViewController.m in Sources */,
 				59FA82A615FB810B00A048A2 /* TaxiSiViewController.m in Sources */,
+				59FA82AA15FB87DF00A048A2 /* CiudadPinAnotation.m in Sources */,
+				5989FC4415FBA966004690EE /* TSRequest.m in Sources */,
+				5989FC4A15FBAA9F004690EE /* TaxiSiService.m in Sources */,
+				5989FC4E15FBAB6A004690EE /* TSUser.m in Sources */,
+				5989FC5115FBAB81004690EE /* TSTaxi.m in Sources */,
+				5989FC5415FBACE2004690EE /* TSIncidente.m in Sources */,
+				5989FC5715FBACF2004690EE /* TSObra.m in Sources */,
+				5989FC5A15FBAD18004690EE /* TSSitio.m in Sources */,
+				5989FC5D15FBAEAB004690EE /* TSChofer.m in Sources */,
+				5989FC6015FBAF57004690EE /* TSTarjeton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

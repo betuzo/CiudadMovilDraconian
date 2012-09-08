@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import "CiudadPinAnotation.h"
 
-@interface TaxiSiViewController : UIViewController
+@interface TaxiSiViewController : UIViewController <MKMapViewDelegate, MKAnnotation>
+{
+	IBOutlet MKMapView *ciudadMapView;
+}
+
+@property (nonatomic , strong) IBOutlet MKMapView *ciudadMapView;
+
+-(void)showUserLocation;
 
 @end

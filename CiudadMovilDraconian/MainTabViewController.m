@@ -31,17 +31,17 @@
     // Do any additional setup after loading the view from its nib.
     UIViewController *viewController1 = [[ParentTaxiSiViewController alloc] initWithNibName:@"ParentTaxiSiViewController" bundle:nil];
     UITabBarItem *tab1 = [[UITabBarItem alloc] initWithTitle:@"Taxi Si"
-                                                       image:[UIImage imageNamed:@"destacados-on"] tag:1];
+                                                       image:[UIImage imageNamed:@"tab-taxi-si"] tag:1];
     [viewController1 setTabBarItem:tab1];
     
 	UIViewController *viewController2 = [[ParentMiViajeViewController alloc] initWithNibName:@"ParentMiViajeViewController" bundle:nil];     
     UITabBarItem *tab2 = [[UITabBarItem alloc] initWithTitle:@"Mi Viaje"
-                                                       image:[UIImage imageNamed:@"productos-on"] tag:2];
+                                                       image:[UIImage imageNamed:@"tab-mi-viaje"] tag:2];
     [viewController2 setTabBarItem:tab2];      
     
 	UIViewController *viewController3 = [[ParentConfigViewController alloc] initWithNibName:@"ParentConfigViewController" bundle:nil];
     UITabBarItem *tab3 = [[UITabBarItem alloc] initWithTitle:@"Configurar"
-                                                       image:[UIImage imageNamed:@"tiendas-on"] tag:3];
+                                                       image:[UIImage imageNamed:@"tab-config"] tag:3];
     [viewController3 setTabBarItem:tab3];  
     
 	
