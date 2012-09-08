@@ -9,6 +9,15 @@
 #import "SyncSingleton.h"
 #import <RestKit/RestKit.h>
 #import "TaxiSiService.h"
+#import "TSRequest.h"
+#import "TSUser.h"
+#import "TSTaxi.h"
+#import "TSTarjeton.h"
+#import "TSChofer.h"
+#import "TSIncidente.h"
+#import "TSObra.h"
+#import "TSSitio.h"
+#import "TSPasajero.h"
 
 @implementation SyncSingleton
 
@@ -101,6 +110,14 @@ static SyncSingleton *instanciaHelper = nil;
 {
     _isFinish = NO;
     [syncTimer invalidate];
+}
+
+- (void) dictionaryMappingByResource
+{
+    NSDictionary * dicByMapping = [[NSDictionary alloc] init];
+    TSRequest * peticion = [[TSRequest alloc] init];
+    
+    [dicByMapping setValue:peticion forKey:RESOURCE_FOR_SECURE];
 }
 
 

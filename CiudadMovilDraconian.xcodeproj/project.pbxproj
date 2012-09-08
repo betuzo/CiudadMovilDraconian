@@ -726,14 +726,11 @@
 				5989FC5A15FBAD18004690EE /* TSSitio.m in Sources */,
 				5989FC5D15FBAEAB004690EE /* TSChofer.m in Sources */,
 				5989FC6015FBAF57004690EE /* TSTarjeton.m in Sources */,
-<<<<<<< HEAD
 				15F4D46015FBBC9B00B79574 /* RegistroController.m in Sources */,
-=======
 				5989FC7915FBBCEE004690EE /* SyncSingleton.m in Sources */,
 				5989FC7C15FBCF6D004690EE /* TSPasajero.m in Sources */,
 				5989FC7F15FBD779004690EE /* TaxiSiType.m in Sources */,
 				5989FC8215FBEFD2004690EE /* WebLoad.m in Sources */,
->>>>>>> e44e369f9d512f226b3d03f201220328a5d6068a
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

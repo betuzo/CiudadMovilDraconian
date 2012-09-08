@@ -30,4 +30,6 @@ extern NSString *const RESOURCE_GET_INCIDENTES; // Servicio Rest para obtener In
 
 extern NSString *const RESOURCE_GET_ORBRAS; // Servicio Rest para obtener Ordenes
 
+extern NSString *const RESOURCE_BASE; // Servicio Rest para obtener Ordenes
+
 @end
