@@ -10,6 +10,7 @@
 
 @implementation TSSitio
 
+@synthesize type = _type;
 @synthesize nombre = _nombre;
 @synthesize telefono = _telefono;
 @synthesize longitude = _longitude;

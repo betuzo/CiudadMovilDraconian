@@ -7,7 +7,26 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TSUser.h"
 
 @interface TaxiSiService : NSObject
+
++ (NSArray *) pasajeros;
++ (NSArray *) taxis;
++ (NSArray *) pasajerosCompartidos;
++ (NSArray *) incidentes;
++ (NSArray *) obras;
++ (NSArray *) sitios;
++ (TSUser *) userLogged;
++ (long) timeForSync;
+
++ (void) pasajero:(NSArray *) newPasajeros;
++ (void) taxis:(NSArray *) newTaxis;
++ (void) pasajerosCompartidos:(NSArray *) newPasajerosCompartidos;
++ (void) incidentes:(NSArray *) newIncidentes;
++ (void) obras:(NSArray *) newObras;
++ (void) sitios:(NSArray *) newSitios;
++ (void) userLogged:(TSUser *) newUserLogged;
++ (void) timeForSync:(long) newTimeForSyn;
 
 @end

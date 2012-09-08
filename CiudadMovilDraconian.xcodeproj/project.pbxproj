@@ -44,6 +44,10 @@
 		5989FC5A15FBAD18004690EE /* TSSitio.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5915FBAD18004690EE /* TSSitio.m */; };
 		5989FC5D15FBAEAB004690EE /* TSChofer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5C15FBAEAB004690EE /* TSChofer.m */; };
 		5989FC6015FBAF57004690EE /* TSTarjeton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5F15FBAF57004690EE /* TSTarjeton.m */; };
+		5989FC7915FBBCEE004690EE /* SyncSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC7815FBBCEE004690EE /* SyncSingleton.m */; };
+		5989FC7C15FBCF6D004690EE /* TSPasajero.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC7B15FBCF6D004690EE /* TSPasajero.m */; };
+		5989FC7F15FBD779004690EE /* TaxiSiType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC7E15FBD779004690EE /* TaxiSiType.m */; };
+		5989FC8215FBEFD2004690EE /* WebLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC8115FBEFD2004690EE /* WebLoad.m */; };
 		59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827915FB501900A048A2 /* taxi-si-launch.png */; };
 		59FA827C15FB502500A048A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827B15FB502500A048A2 /* Default.png */; };
 		59FA828015FB7D4500A048A2 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA827E15FB7D4500A048A2 /* MainTabViewController.m */; };
@@ -170,6 +174,14 @@
 		5989FC5C15FBAEAB004690EE /* TSChofer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSChofer.m; sourceTree = "<group>"; };
 		5989FC5E15FBAF57004690EE /* TSTarjeton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSTarjeton.h; sourceTree = "<group>"; };
 		5989FC5F15FBAF57004690EE /* TSTarjeton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSTarjeton.m; sourceTree = "<group>"; };
+		5989FC7715FBBCEE004690EE /* SyncSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyncSingleton.h; sourceTree = "<group>"; };
+		5989FC7815FBBCEE004690EE /* SyncSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyncSingleton.m; sourceTree = "<group>"; };
+		5989FC7A15FBCF6D004690EE /* TSPasajero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSPasajero.h; sourceTree = "<group>"; };
+		5989FC7B15FBCF6D004690EE /* TSPasajero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSPasajero.m; sourceTree = "<group>"; };
+		5989FC7D15FBD779004690EE /* TaxiSiType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxiSiType.h; sourceTree = "<group>"; };
+		5989FC7E15FBD779004690EE /* TaxiSiType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxiSiType.m; sourceTree = "<group>"; };
+		5989FC8015FBEFD2004690EE /* WebLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebLoad.h; sourceTree = "<group>"; };
+		5989FC8115FBEFD2004690EE /* WebLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebLoad.m; sourceTree = "<group>"; };
 		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
 		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		59FA827D15FB7D4500A048A2 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
@@ -333,6 +345,10 @@
 		593FAE0315FB396900CA156A /* Sync */ = {
 			isa = PBXGroup;
 			children = (
+				5989FC7715FBBCEE004690EE /* SyncSingleton.h */,
+				5989FC7815FBBCEE004690EE /* SyncSingleton.m */,
+				5989FC8015FBEFD2004690EE /* WebLoad.h */,
+				5989FC8115FBEFD2004690EE /* WebLoad.m */,
 			);
 			name = Sync;
 			sourceTree = "<group>";
@@ -358,6 +374,8 @@
 			children = (
 				5989FC4815FBAA9F004690EE /* TaxiSiService.h */,
 				5989FC4915FBAA9F004690EE /* TaxiSiService.m */,
+				5989FC7D15FBD779004690EE /* TaxiSiType.h */,
+				5989FC7E15FBD779004690EE /* TaxiSiType.m */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -381,6 +399,8 @@
 				5989FC5615FBACF2004690EE /* TSObra.m */,
 				5989FC5815FBAD18004690EE /* TSSitio.h */,
 				5989FC5915FBAD18004690EE /* TSSitio.m */,
+				5989FC7A15FBCF6D004690EE /* TSPasajero.h */,
+				5989FC7B15FBCF6D004690EE /* TSPasajero.m */,
 			);
 			name = Domain;
 			sourceTree = "<group>";
@@ -677,6 +697,10 @@
 				5989FC5A15FBAD18004690EE /* TSSitio.m in Sources */,
 				5989FC5D15FBAEAB004690EE /* TSChofer.m in Sources */,
 				5989FC6015FBAF57004690EE /* TSTarjeton.m in Sources */,
+				5989FC7915FBBCEE004690EE /* SyncSingleton.m in Sources */,
+				5989FC7C15FBCF6D004690EE /* TSPasajero.m in Sources */,
+				5989FC7F15FBD779004690EE /* TaxiSiType.m in Sources */,
+				5989FC8215FBEFD2004690EE /* WebLoad.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

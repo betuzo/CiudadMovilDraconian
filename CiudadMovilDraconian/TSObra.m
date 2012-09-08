@@ -10,4 +10,9 @@
 
 @implementation TSObra
 
+@synthesize type = _type;
+@synthesize description = _description;
+@synthesize longitude = _longitude;
+@synthesize latitude = _latitude;
+
 @end

@@ -10,12 +10,13 @@
 
 @interface TSUser : NSObject
 
+@property (nonatomic, strong) UIImage *type;
 @property (nonatomic, strong) NSString *nickname;
 @property (nonatomic, strong) NSString *password;
-@property (nonatomic, strong) NSString *nombre;
-@property (nonatomic, strong) NSString *apellido;
-@property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSNumber *longitude;
 @property (nonatomic, strong) NSNumber *latitude;
+@property (nonatomic) BOOL compartir;
+@property (nonatomic) BOOL verIncidentes;
+@property (nonatomic) BOOL verComprtidos;
 
 @end
