@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "TaxiSiService.h"
+#import "Twitter/Twitter.h"
 
 @interface ConfigViewController : UIViewController
 
@@ -17,5 +18,7 @@
 @property (retain, nonatomic) IBOutlet UILabel *lblNombre;
 @property (retain, nonatomic) IBOutlet UILabel *lblEmail;
 @property (retain, nonatomic) IBOutlet UILabel *lblPassword;
+
+-(IBAction)enviarTweet:(id)sender;
 
 @end

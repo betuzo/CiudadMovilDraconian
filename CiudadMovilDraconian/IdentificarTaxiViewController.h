@@ -1,0 +1,17 @@
+//
+//  IdentificarTaxiViewController.h
+//  CiudadMovilDraconian
+//
+//  Created by Mobiik on 09/09/12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface IdentificarTaxiViewController : UIViewController
+
+@property (nonatomic,strong) UINavigationController *identificaTaxiNavigationController;
+
+-(IBAction)identificarTaxi:(id)sender;
+
+@end

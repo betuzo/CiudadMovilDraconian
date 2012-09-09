@@ -30,6 +30,18 @@
     return self;
 }
 
+
+-(IBAction)enviarTweet:(id)sender{
+    if ([TWTweetComposeViewController canSendTweet]) {
+        TWTweetComposeViewController * tweetShet = [[TWTweetComposeViewController alloc] init];
+        [tweetShet setInitialText:@"Taxi Sí comparte un taxi seguro"];
+        [self presentModalViewController:tweetShet animated:YES];
+    }else{
+        UIAlertView * alertView =[[UIAlertView alloc] initWithTitle:@"Error en solicitud" message:@"Debe configurar su cuenta de twitter" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil   ];
+        [alertView show];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
