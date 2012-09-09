@@ -76,12 +76,29 @@
 
 - (void) pedirTaxi:(id) sender
 {
-    
+    UIAlertView *alert = [[UIAlertView alloc] init];
+	[alert setTitle:@"Confirmar"];
+	[alert setMessage:@"¿Necesitas un Taxi Si?"];
+	[alert setDelegate:self];
+	[alert addButtonWithTitle:@"Si"];
+	[alert addButtonWithTitle:@"No"];
+	[alert show];
+}
+
+-(void) alertView:(UIAlertView*)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    NSString *title = [alertView buttonTitleAtIndex:buttonIndex];
+    if ([title isEqualToString:@"Si"])
+    {
+        UIAlertView * alertView =[[UIAlertView alloc] initWithTitle:@"Taxi Si" message:@"Taxi Si recibio su solicitud, Gracias" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil   ];
+        [alertView show];
+    }
 }
 
 - (void) verIncidenciasObras:(id) sender
 {
-    
+    UIAlertView * alertView =[[UIAlertView alloc] initWithTitle:@"Taxi Si" message:@"En construcción, obras e incidentes viales en linea" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil   ];
+    [alertView show];
 }
 
 - (void)viewDidUnload
@@ -224,6 +241,23 @@
         myAnnotation.coordinate=theCoordinate;
         myAnnotation.title = @"Obras";
         myAnnotation.imageIcon = [TaxiSiService imageByTypeAnnotetion:ANNOTATION_TYPE_OBRA];
+        
+        [_ciudadMapView addAnnotation:myAnnotation];
+    }
+}
+
+-(void) addAnnotationPasajerosCompartir
+{
+    [self removeAnnotationByType:ANNOTATION_TYPE_PASAJERO_COMPARTIDO];
+    for (TSPasajero *element in [TaxiSiService pasajerosCompartidos]) {
+        CLLocationCoordinate2D theCoordinate;
+        theCoordinate.latitude = element.latitude;
+        theCoordinate.longitude = element.longitude;
+        
+        CiudadPinAnotation* myAnnotation=[[CiudadPinAnotation alloc] init];
+        
+        myAnnotation.coordinate=theCoordinate;
+        myAnnotation.imageIcon = [TaxiSiService imageByTypeAnnotetion:ANNOTATION_TYPE_PASAJERO_COMPARTIDO];
         
         [_ciudadMapView addAnnotation:myAnnotation];
     }

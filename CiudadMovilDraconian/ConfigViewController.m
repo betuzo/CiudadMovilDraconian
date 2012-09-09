@@ -51,7 +51,31 @@
     _lblApellidos.text = @"Gomez Quintanilla";
     _lblNombre.text = @"Adan";
     _lblEmail.text = @"small_los@hotmail.com";
+    
+    CGRect rectButton;
+    
+    rectButton.size.width = 40;
+    rectButton.size.height = 40;
+    
+    rectButton.origin.x = 0;
+    rectButton.origin.y = 0;
+    
+    UIButton *leftButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+        
+    [leftButtonItem addTarget:self action:@selector(regresar:) forControlEvents:UIControlEventTouchUpInside];
+    [leftButtonItem setFrame:rectButton];
+    [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"return-negro"] forState:UIControlStateNormal];
+    
+    UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButtonItem];
+        
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+        
     // Do any additional setup after loading the view from its nib.
+}
+
+- (void)regresar: (id) sender
+{
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidUnload
