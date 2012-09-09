@@ -10,4 +10,7 @@
 
 @interface PerfilTaxiViewController : UIViewController
 
+-(IBAction)regresar:(id)sender;
+
+
 @end
