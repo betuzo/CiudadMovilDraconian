@@ -1,20 +1,21 @@
 //
-//  ParentTaxiSiViewController.m
+//  MainViewController.m
 //  CiudadMovilDraconian
 //
 //  Created by Mobiik on 08/09/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "ParentTaxiSiViewController.h"
+#import "MainViewController.h"
+#import "TaxiSiViewController.h"
 
-@interface ParentTaxiSiViewController ()
+@interface MainViewController ()
 
 @end
 
-@implementation ParentTaxiSiViewController
+@implementation MainViewController
 
-@synthesize taxiSiNavigationController = _taxiSiNavigationController;
+@synthesize generalNavigationController = _generalNavigationController;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,13 +32,13 @@
     // Do any additional setup after loading the view from its nib.
     TaxiSiViewController *controller = [[TaxiSiViewController alloc]initWithNibName:@"TaxiSiViewController" bundle:nil];
     
-    _taxiSiNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
+    _generalNavigationController = [[UINavigationController alloc] initWithRootViewController:controller];
     
-    [_taxiSiNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation-bar"] forBarMetrics:UIBarMetricsDefault];
+    [_generalNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation-bar"] forBarMetrics:UIBarMetricsDefault];
     
-	[_taxiSiNavigationController.view setFrame:self.view.bounds];
-    
-	[self.view addSubview:_taxiSiNavigationController.view];
+    [_generalNavigationController.view setFrame:self.view.bounds];
+
+    [self.view addSubview:_generalNavigationController.view];
 }
 
 - (void)viewDidUnload

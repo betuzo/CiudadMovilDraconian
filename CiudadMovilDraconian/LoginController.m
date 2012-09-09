@@ -102,8 +102,8 @@
 - (void)modelLoadCompletedWithResponse:(TSResponse *)response
 {
     if (response.success){
-        MainTabViewController *mainViewController = [[MainTabViewController alloc] initWithNibName:@"MainTabViewController" bundle:nil];
-        [self presentModalViewController:mainViewController animated:YES];
+        MainViewController *viewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+        [self presentModalViewController:viewController animated:YES];
     }else{
         UIAlertView *usageAlertView = [[UIAlertView alloc] initWithTitle:@"Login" message:response.message delegate:self cancelButtonTitle:@"Acept" otherButtonTitles:nil];
         [usageAlertView show];  

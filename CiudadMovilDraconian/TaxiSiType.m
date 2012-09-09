@@ -27,6 +27,6 @@ NSString *const RESOURCE_GET_INCIDENTES = @"/taxisi-backend/api/incidenteVial/";
 
 NSString *const RESOURCE_GET_ORBRAS = @"/taxisi-backend/api/obras/";
 
-NSString *const RESOURCE_BASE = @"http://192.168.1.3:8080";
+NSString *const RESOURCE_BASE = @"http://192.168.1.6:8080";
 
 @end

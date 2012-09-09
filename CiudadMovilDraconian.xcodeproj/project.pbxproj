@@ -52,20 +52,14 @@
 		5989FC7C15FBCF6D004690EE /* TSPasajero.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC7B15FBCF6D004690EE /* TSPasajero.m */; };
 		5989FC7F15FBD779004690EE /* TaxiSiType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC7E15FBD779004690EE /* TaxiSiType.m */; };
 		5989FC8215FBEFD2004690EE /* WebLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC8115FBEFD2004690EE /* WebLoad.m */; };
+		5989FCAE15FC501C004690EE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FCAC15FC501C004690EE /* MainViewController.m */; };
+		5989FCAF15FC501C004690EE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCAD15FC501C004690EE /* MainViewController.xib */; };
 		59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827915FB501900A048A2 /* taxi-si-launch.png */; };
 		59FA827C15FB502500A048A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827B15FB502500A048A2 /* Default.png */; };
-		59FA828015FB7D4500A048A2 /* MainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA827E15FB7D4500A048A2 /* MainTabViewController.m */; };
-		59FA828115FB7D4500A048A2 /* MainTabViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827F15FB7D4500A048A2 /* MainTabViewController.xib */; };
-		59FA828D15FB803F00A048A2 /* ParentConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA828B15FB803F00A048A2 /* ParentConfigViewController.m */; };
-		59FA828E15FB803F00A048A2 /* ParentConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA828C15FB803F00A048A2 /* ParentConfigViewController.xib */; };
 		59FA829215FB806300A048A2 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA829015FB806300A048A2 /* ConfigViewController.m */; };
 		59FA829315FB806300A048A2 /* ConfigViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA829115FB806300A048A2 /* ConfigViewController.xib */; };
-		59FA829715FB809D00A048A2 /* ParentMiViajeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA829515FB809D00A048A2 /* ParentMiViajeViewController.m */; };
-		59FA829815FB809D00A048A2 /* ParentMiViajeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA829615FB809D00A048A2 /* ParentMiViajeViewController.xib */; };
 		59FA829C15FB80B500A048A2 /* MiViajeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA829A15FB80B500A048A2 /* MiViajeViewController.m */; };
 		59FA829D15FB80B500A048A2 /* MiViajeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA829B15FB80B500A048A2 /* MiViajeViewController.xib */; };
-		59FA82A115FB80F800A048A2 /* ParentTaxiSiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA829F15FB80F800A048A2 /* ParentTaxiSiViewController.m */; };
-		59FA82A215FB80F800A048A2 /* ParentTaxiSiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA82A015FB80F800A048A2 /* ParentTaxiSiViewController.xib */; };
 		59FA82A615FB810B00A048A2 /* TaxiSiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA82A415FB810B00A048A2 /* TaxiSiViewController.m */; };
 		59FA82A715FB810B00A048A2 /* TaxiSiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA82A515FB810B00A048A2 /* TaxiSiViewController.xib */; };
 		59FA82AA15FB87DF00A048A2 /* CiudadPinAnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA82A915FB87DF00A048A2 /* CiudadPinAnotation.m */; };
@@ -192,26 +186,17 @@
 		5989FC8015FBEFD2004690EE /* WebLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebLoad.h; sourceTree = "<group>"; };
 		5989FC8115FBEFD2004690EE /* WebLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebLoad.m; sourceTree = "<group>"; };
 		5989FC9015FC0909004690EE /* WebDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebDelegate.h; sourceTree = "<group>"; };
+		5989FCAB15FC501C004690EE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		5989FCAC15FC501C004690EE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		5989FCAD15FC501C004690EE /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
 		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
-		59FA827D15FB7D4500A048A2 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
-		59FA827E15FB7D4500A048A2 /* MainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabViewController.m; sourceTree = "<group>"; };
-		59FA827F15FB7D4500A048A2 /* MainTabViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainTabViewController.xib; sourceTree = "<group>"; };
-		59FA828A15FB803F00A048A2 /* ParentConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentConfigViewController.h; sourceTree = "<group>"; };
-		59FA828B15FB803F00A048A2 /* ParentConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentConfigViewController.m; sourceTree = "<group>"; };
-		59FA828C15FB803F00A048A2 /* ParentConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentConfigViewController.xib; sourceTree = "<group>"; };
 		59FA828F15FB806300A048A2 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
 		59FA829015FB806300A048A2 /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfigViewController.m; sourceTree = "<group>"; };
 		59FA829115FB806300A048A2 /* ConfigViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfigViewController.xib; sourceTree = "<group>"; };
-		59FA829415FB809D00A048A2 /* ParentMiViajeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentMiViajeViewController.h; sourceTree = "<group>"; };
-		59FA829515FB809D00A048A2 /* ParentMiViajeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentMiViajeViewController.m; sourceTree = "<group>"; };
-		59FA829615FB809D00A048A2 /* ParentMiViajeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentMiViajeViewController.xib; sourceTree = "<group>"; };
 		59FA829915FB80B500A048A2 /* MiViajeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiViajeViewController.h; sourceTree = "<group>"; };
 		59FA829A15FB80B500A048A2 /* MiViajeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiViajeViewController.m; sourceTree = "<group>"; };
 		59FA829B15FB80B500A048A2 /* MiViajeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MiViajeViewController.xib; sourceTree = "<group>"; };
-		59FA829E15FB80F800A048A2 /* ParentTaxiSiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentTaxiSiViewController.h; sourceTree = "<group>"; };
-		59FA829F15FB80F800A048A2 /* ParentTaxiSiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentTaxiSiViewController.m; sourceTree = "<group>"; };
-		59FA82A015FB80F800A048A2 /* ParentTaxiSiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentTaxiSiViewController.xib; sourceTree = "<group>"; };
 		59FA82A315FB810B00A048A2 /* TaxiSiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxiSiViewController.h; sourceTree = "<group>"; };
 		59FA82A415FB810B00A048A2 /* TaxiSiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxiSiViewController.m; sourceTree = "<group>"; };
 		59FA82A515FB810B00A048A2 /* TaxiSiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TaxiSiViewController.xib; sourceTree = "<group>"; };
@@ -438,11 +423,11 @@
 		59FA827715FB495000A048A2 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				5989FCAD15FC501C004690EE /* MainViewController.xib */,
 				59FA828815FB800700A048A2 /* Configuracion */,
 				59FA828615FB7FEC00A048A2 /* MiViaje */,
 				59FA828515FB7F6600A048A2 /* TaxiSi */,
 				59FA828315FB7F3100A048A2 /* Login */,
-				59FA827F15FB7D4500A048A2 /* MainTabViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -450,12 +435,12 @@
 		59FA827815FB495F00A048A2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5989FCAB15FC501C004690EE /* MainViewController.h */,
+				5989FCAC15FC501C004690EE /* MainViewController.m */,
 				59FA828915FB801300A048A2 /* Configuracion */,
 				59FA828715FB7FFF00A048A2 /* MiViaje */,
 				59FA828415FB7F3E00A048A2 /* TaxiSi */,
 				59FA828215FB7F2200A048A2 /* Login */,
-				59FA827D15FB7D4500A048A2 /* MainTabViewController.h */,
-				59FA827E15FB7D4500A048A2 /* MainTabViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -482,8 +467,6 @@
 		59FA828415FB7F3E00A048A2 /* TaxiSi */ = {
 			isa = PBXGroup;
 			children = (
-				59FA829E15FB80F800A048A2 /* ParentTaxiSiViewController.h */,
-				59FA829F15FB80F800A048A2 /* ParentTaxiSiViewController.m */,
 				59FA82A315FB810B00A048A2 /* TaxiSiViewController.h */,
 				59FA82A415FB810B00A048A2 /* TaxiSiViewController.m */,
 				59FA82A815FB87DF00A048A2 /* CiudadPinAnotation.h */,
@@ -495,7 +478,6 @@
 		59FA828515FB7F6600A048A2 /* TaxiSi */ = {
 			isa = PBXGroup;
 			children = (
-				59FA82A015FB80F800A048A2 /* ParentTaxiSiViewController.xib */,
 				59FA82A515FB810B00A048A2 /* TaxiSiViewController.xib */,
 			);
 			name = TaxiSi;
@@ -504,7 +486,6 @@
 		59FA828615FB7FEC00A048A2 /* MiViaje */ = {
 			isa = PBXGroup;
 			children = (
-				59FA829615FB809D00A048A2 /* ParentMiViajeViewController.xib */,
 				59FA829B15FB80B500A048A2 /* MiViajeViewController.xib */,
 			);
 			name = MiViaje;
@@ -513,8 +494,6 @@
 		59FA828715FB7FFF00A048A2 /* MiViaje */ = {
 			isa = PBXGroup;
 			children = (
-				59FA829415FB809D00A048A2 /* ParentMiViajeViewController.h */,
-				59FA829515FB809D00A048A2 /* ParentMiViajeViewController.m */,
 				59FA829915FB80B500A048A2 /* MiViajeViewController.h */,
 				59FA829A15FB80B500A048A2 /* MiViajeViewController.m */,
 			);
@@ -524,7 +503,6 @@
 		59FA828815FB800700A048A2 /* Configuracion */ = {
 			isa = PBXGroup;
 			children = (
-				59FA828C15FB803F00A048A2 /* ParentConfigViewController.xib */,
 				59FA829115FB806300A048A2 /* ConfigViewController.xib */,
 			);
 			name = Configuracion;
@@ -533,8 +511,6 @@
 		59FA828915FB801300A048A2 /* Configuracion */ = {
 			isa = PBXGroup;
 			children = (
-				59FA828A15FB803F00A048A2 /* ParentConfigViewController.h */,
-				59FA828B15FB803F00A048A2 /* ParentConfigViewController.m */,
 				59FA828F15FB806300A048A2 /* ConfigViewController.h */,
 				59FA829015FB806300A048A2 /* ConfigViewController.m */,
 			);
@@ -662,12 +638,8 @@
 				593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */,
 				59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */,
 				59FA827C15FB502500A048A2 /* Default.png in Resources */,
-				59FA828115FB7D4500A048A2 /* MainTabViewController.xib in Resources */,
-				59FA828E15FB803F00A048A2 /* ParentConfigViewController.xib in Resources */,
 				59FA829315FB806300A048A2 /* ConfigViewController.xib in Resources */,
-				59FA829815FB809D00A048A2 /* ParentMiViajeViewController.xib in Resources */,
 				59FA829D15FB80B500A048A2 /* MiViajeViewController.xib in Resources */,
-				59FA82A215FB80F800A048A2 /* ParentTaxiSiViewController.xib in Resources */,
 				59FA82A715FB810B00A048A2 /* TaxiSiViewController.xib in Resources */,
 				59FA82BD15FB967300A048A2 /* login-boton-entrar.png in Resources */,
 				5989FC3815FB9835004690EE /* login-background.png in Resources */,
@@ -678,6 +650,7 @@
 				15F4D46115FBBC9B00B79574 /* RegistroController.xib in Resources */,
 				15F4D47615FBF00400B79574 /* login-boton-registro.png in Resources */,
 				15B59C6715FC0B4200579521 /* usr.png in Resources */,
+				5989FCAF15FC501C004690EE /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -715,12 +688,8 @@
 				593FA85415FAB3EF00CA156A /* main.m in Sources */,
 				593FA85815FAB3EF00CA156A /* AppDelegate.m in Sources */,
 				593FA85B15FAB3EF00CA156A /* LoginController.m in Sources */,
-				59FA828015FB7D4500A048A2 /* MainTabViewController.m in Sources */,
-				59FA828D15FB803F00A048A2 /* ParentConfigViewController.m in Sources */,
 				59FA829215FB806300A048A2 /* ConfigViewController.m in Sources */,
-				59FA829715FB809D00A048A2 /* ParentMiViajeViewController.m in Sources */,
 				59FA829C15FB80B500A048A2 /* MiViajeViewController.m in Sources */,
-				59FA82A115FB80F800A048A2 /* ParentTaxiSiViewController.m in Sources */,
 				59FA82A615FB810B00A048A2 /* TaxiSiViewController.m in Sources */,
 				59FA82AA15FB87DF00A048A2 /* CiudadPinAnotation.m in Sources */,
 				5989FC4415FBA966004690EE /* TSResponse.m in Sources */,
@@ -737,6 +706,7 @@
 				5989FC7C15FBCF6D004690EE /* TSPasajero.m in Sources */,
 				5989FC7F15FBD779004690EE /* TaxiSiType.m in Sources */,
 				5989FC8215FBEFD2004690EE /* WebLoad.m in Sources */,
+				5989FCAE15FC501C004690EE /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
-#import "MainTabViewController.h"
+#import "MainViewController.h"
 
 @interface RegistroController : UIViewController<RKObjectLoaderDelegate,UITextFieldDelegate>
 
