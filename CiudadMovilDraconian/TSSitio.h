@@ -13,7 +13,7 @@
 @property (nonatomic, strong) UIImage *type;
 @property (nonatomic, strong) NSString *nombre;
 @property (nonatomic, strong) NSString *telefono;
-@property (nonatomic, strong) NSNumber *longitude;
-@property (nonatomic, strong) NSNumber *latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) double latitude;
 
 @end

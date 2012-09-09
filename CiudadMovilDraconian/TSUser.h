@@ -15,8 +15,8 @@
 @property (nonatomic, strong) NSString *nickname;
 @property (nonatomic, strong) NSString *password;
 @property (nonatomic, strong) NSString *role;
-@property (nonatomic, strong) NSNumber *longitude;
-@property (nonatomic, strong) NSNumber *latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) double latitude;
 @property (nonatomic) BOOL compartir;
 @property (nonatomic) BOOL verIncidentes;
 @property (nonatomic) BOOL verComprtidos;

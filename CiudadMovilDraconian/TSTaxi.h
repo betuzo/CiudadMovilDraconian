@@ -15,7 +15,7 @@
 @property (nonatomic, strong) NSString *tipo;
 @property (nonatomic, strong) NSString *placas;
 @property (nonatomic, strong) NSString *vehiculo;
-@property (nonatomic, strong) NSNumber *longitude;
-@property (nonatomic, strong) NSNumber *latitude;
+@property (nonatomic) double longitude;
+@property (nonatomic) double latitude;
 
 @end

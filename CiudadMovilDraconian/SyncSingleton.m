@@ -23,6 +23,12 @@
 
 @synthesize isConnected = _isConnected;
 @synthesize isFinish = _isFinish;
+@synthesize webLoadTaxis = _webLoadTaxis;
+@synthesize webLoadPasajeros = _webLoadPasajeros;
+@synthesize webLoadPasajerosCompartidos = _webLoadPasajerosCompartidos;
+@synthesize webLoadIncidencias = _webLoadIncidencias;
+@synthesize webLoadObras = _webLoadObras;
+@synthesize iContSync = _iContSync;
 
 static SyncSingleton *instanciaHelper = nil;
 
@@ -44,6 +50,13 @@ static NSMutableDictionary * mappingsRest = nil;
 - (void) initNotification
 {
     syncTimer = [NSTimer scheduledTimerWithTimeInterval:[TaxiSiService timeForSync] target:self selector:@selector(syncGeneral) userInfo:nil repeats:YES];
+
+    _webLoadTaxis = [[WebLoad alloc] init];
+    _webLoadPasajeros = [[WebLoad alloc] init];
+    _webLoadPasajerosCompartidos = [[WebLoad alloc] init];
+    _webLoadIncidencias = [[WebLoad alloc] init];
+    _webLoadObras = [[WebLoad alloc] init];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(reachabilityChanged:)
                                                  name:RKReachabilityDidChangeNotification
@@ -58,8 +71,14 @@ static NSMutableDictionary * mappingsRest = nil;
 
 - (void) syncGeneral
 {
-    if (_isFinish == NO) {
-        _isFinish = YES;
+    if (_isFinish == YES || _iContSync == 0) {
+        
+        NSArray *params = [NSArray arrayWithObjects:
+                            [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].latitude], 
+                            [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].longitude],
+                            nil];
+        [_webLoadTaxis loadWithResource:RESOURCE_GET_TAXIS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_TAXIS] andDelegate:self andParameter:params];
+        _iContSync = _iContSync + 1;
     }
 }
 
@@ -204,5 +223,14 @@ static NSMutableDictionary * mappingsRest = nil;
     return mappingsRest;
 }
 
+- (void)modelLoadCompletedWithResponse:(TSResponse *)response
+{
+    _iContSync = _iContSync - 1;
+}
+
+- (void)modelLoadCompletedWithError:(NSError *)error
+{
+    _iContSync = _iContSync - 1;
+}
 
 @end

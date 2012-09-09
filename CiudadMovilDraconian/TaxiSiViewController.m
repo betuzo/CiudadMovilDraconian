@@ -63,7 +63,6 @@
         annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:AnnotationViewID];
     }
 	
-	
 	if ([annotation isKindOfClass:[CiudadPinAnotation class]]) {
 		annotationView.image = [UIImage imageNamed:@"pinQ.png"];
 		annotationView.annotation = annotation;
@@ -102,6 +101,8 @@
     CLLocationCoordinate2D location;
     location.latitude = [_ciudadMapView userLocation].coordinate.latitude;
     location.longitude = [_ciudadMapView userLocation].coordinate.longitude;
+    [TaxiSiService userLogged].latitude = location.latitude;
+    [TaxiSiService userLogged].longitude = location.longitude;
     region.span = span;
     region.center = location;
     [_ciudadMapView setRegion:region animated:YES];    
