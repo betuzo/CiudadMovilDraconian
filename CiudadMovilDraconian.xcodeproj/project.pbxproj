@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		15B59C6715FC0B4200579521 /* usr.png in Resources */ = {isa = PBXBuildFile; fileRef = 15B59C6615FC0B4200579521 /* usr.png */; };
+		153AAB7915FC4D2D0060C47F /* Fondo 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 153AAB7815FC4D2D0060C47F /* Fondo 1.png */; };
+		153AAB7B15FC4D6D0060C47F /* enter.png in Resources */ = {isa = PBXBuildFile; fileRef = 153AAB7A15FC4D6D0060C47F /* enter.png */; };
+		153AAB8115FC502D0060C47F /* login-boton-registro.png in Resources */ = {isa = PBXBuildFile; fileRef = 153AAB8015FC502D0060C47F /* login-boton-registro.png */; };
 		15F4D46015FBBC9B00B79574 /* RegistroController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15F4D45E15FBBC9A00B79574 /* RegistroController.m */; };
 		15F4D46115FBBC9B00B79574 /* RegistroController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15F4D45F15FBBC9A00B79574 /* RegistroController.xib */; };
-		15F4D47615FBF00400B79574 /* login-boton-registro.png in Resources */ = {isa = PBXBuildFile; fileRef = 15F4D47515FBF00400B79574 /* login-boton-registro.png */; };
 		593FA84815FAB3EF00CA156A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FA84715FAB3EF00CA156A /* UIKit.framework */; };
 		593FA84A15FAB3EF00CA156A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FA84915FAB3EF00CA156A /* Foundation.framework */; };
 		593FA84C15FAB3EF00CA156A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FA84B15FAB3EF00CA156A /* CoreGraphics.framework */; };
@@ -34,11 +35,6 @@
 		593FADA415FB1ADD00CA156A /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 593FAD7515FB18D800CA156A /* libRestKit.a */; };
 		593FAE1B15FB422000CA156A /* icono-taxi-si.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE1915FB422000CA156A /* icono-taxi-si.png */; };
 		593FAE2115FB457000CA156A /* icono-taxi-si-retina.png in Resources */ = {isa = PBXBuildFile; fileRef = 593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */; };
-		5989FC3815FB9835004690EE /* login-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3715FB9835004690EE /* login-background.png */; };
-		5989FC3B15FBA33D004690EE /* navigation-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3A15FBA33D004690EE /* navigation-bar.png */; };
-		5989FC3F15FBA373004690EE /* tab-config.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3C15FBA373004690EE /* tab-config.png */; };
-		5989FC4015FBA373004690EE /* tab-mi-viaje.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3D15FBA373004690EE /* tab-mi-viaje.png */; };
-		5989FC4115FBA373004690EE /* tab-taxi-si.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3E15FBA373004690EE /* tab-taxi-si.png */; };
 		5989FC4415FBA966004690EE /* TSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4315FBA966004690EE /* TSResponse.m */; };
 		5989FC4A15FBAA9F004690EE /* TaxiSiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4915FBAA9F004690EE /* TaxiSiService.m */; };
 		5989FC4E15FBAB6A004690EE /* TSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4D15FBAB6A004690EE /* TSUser.m */; };
@@ -70,7 +66,6 @@
 		59FA82A715FB810B00A048A2 /* TaxiSiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59FA82A515FB810B00A048A2 /* TaxiSiViewController.xib */; };
 		59FA82AA15FB87DF00A048A2 /* CiudadPinAnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA82A915FB87DF00A048A2 /* CiudadPinAnotation.m */; };
 		59FA82B915FB8C6900A048A2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59FA82B815FB8C6800A048A2 /* MapKit.framework */; };
-		59FA82BD15FB967300A048A2 /* login-boton-entrar.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA82BA15FB967300A048A2 /* login-boton-entrar.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,11 +121,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		15B59C6615FC0B4200579521 /* usr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usr.png; sourceTree = "<group>"; };
+		153AAB7815FC4D2D0060C47F /* Fondo 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fondo 1.png"; sourceTree = "<group>"; };
+		153AAB7A15FC4D6D0060C47F /* enter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = enter.png; sourceTree = "<group>"; };
+		153AAB8015FC502D0060C47F /* login-boton-registro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-boton-registro.png"; sourceTree = "<group>"; };
 		15F4D45D15FBBC9900B79574 /* RegistroController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegistroController.h; path = ../RegistroController.h; sourceTree = "<group>"; };
 		15F4D45E15FBBC9A00B79574 /* RegistroController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegistroController.m; path = ../RegistroController.m; sourceTree = "<group>"; };
 		15F4D45F15FBBC9A00B79574 /* RegistroController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = RegistroController.xib; path = ../RegistroController.xib; sourceTree = "<group>"; };
-		15F4D47515FBF00400B79574 /* login-boton-registro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-boton-registro.png"; sourceTree = "<group>"; };
 		593FA84315FAB3EF00CA156A /* CiudadMovilDraconian.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CiudadMovilDraconian.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		593FA84715FAB3EF00CA156A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		593FA84915FAB3EF00CA156A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -160,11 +156,6 @@
 		593FADA215FB1AC400CA156A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		593FAE1915FB422000CA156A /* icono-taxi-si.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si.png"; sourceTree = "<group>"; };
 		593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icono-taxi-si-retina.png"; sourceTree = "<group>"; };
-		5989FC3715FB9835004690EE /* login-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-background.png"; sourceTree = "<group>"; };
-		5989FC3A15FBA33D004690EE /* navigation-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-bar.png"; sourceTree = "<group>"; };
-		5989FC3C15FBA373004690EE /* tab-config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-config.png"; sourceTree = "<group>"; };
-		5989FC3D15FBA373004690EE /* tab-mi-viaje.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-mi-viaje.png"; sourceTree = "<group>"; };
-		5989FC3E15FBA373004690EE /* tab-taxi-si.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-taxi-si.png"; sourceTree = "<group>"; };
 		5989FC4215FBA966004690EE /* TSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSResponse.h; sourceTree = "<group>"; };
 		5989FC4315FBA966004690EE /* TSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSResponse.m; sourceTree = "<group>"; };
 		5989FC4815FBAA9F004690EE /* TaxiSiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxiSiService.h; sourceTree = "<group>"; };
@@ -218,7 +209,6 @@
 		59FA82A815FB87DF00A048A2 /* CiudadPinAnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CiudadPinAnotation.h; sourceTree = "<group>"; };
 		59FA82A915FB87DF00A048A2 /* CiudadPinAnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CiudadPinAnotation.m; sourceTree = "<group>"; };
 		59FA82B815FB8C6800A048A2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		59FA82BA15FB967300A048A2 /* login-boton-entrar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login-boton-entrar.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -384,15 +374,10 @@
 			isa = PBXGroup;
 			children = (
 				59FA827B15FB502500A048A2 /* Default.png */,
-				5989FC3C15FBA373004690EE /* tab-config.png */,
-				5989FC3D15FBA373004690EE /* tab-mi-viaje.png */,
-				5989FC3E15FBA373004690EE /* tab-taxi-si.png */,
-				15B59C6615FC0B4200579521 /* usr.png */,
-				5989FC3A15FBA33D004690EE /* navigation-bar.png */,
-				15F4D47515FBF00400B79574 /* login-boton-registro.png */,
-				59FA82BA15FB967300A048A2 /* login-boton-entrar.png */,
-				5989FC3715FB9835004690EE /* login-background.png */,
 				59FA827915FB501900A048A2 /* taxi-si-launch.png */,
+				153AAB7A15FC4D6D0060C47F /* enter.png */,
+				153AAB7815FC4D2D0060C47F /* Fondo 1.png */,
+				153AAB8015FC502D0060C47F /* login-boton-registro.png */,
 				593FAE2015FB457000CA156A /* icono-taxi-si-retina.png */,
 				593FAE1915FB422000CA156A /* icono-taxi-si.png */,
 			);
@@ -669,15 +654,10 @@
 				59FA829D15FB80B500A048A2 /* MiViajeViewController.xib in Resources */,
 				59FA82A215FB80F800A048A2 /* ParentTaxiSiViewController.xib in Resources */,
 				59FA82A715FB810B00A048A2 /* TaxiSiViewController.xib in Resources */,
-				59FA82BD15FB967300A048A2 /* login-boton-entrar.png in Resources */,
-				5989FC3815FB9835004690EE /* login-background.png in Resources */,
-				5989FC3B15FBA33D004690EE /* navigation-bar.png in Resources */,
-				5989FC3F15FBA373004690EE /* tab-config.png in Resources */,
-				5989FC4015FBA373004690EE /* tab-mi-viaje.png in Resources */,
-				5989FC4115FBA373004690EE /* tab-taxi-si.png in Resources */,
 				15F4D46115FBBC9B00B79574 /* RegistroController.xib in Resources */,
-				15F4D47615FBF00400B79574 /* login-boton-registro.png in Resources */,
-				15B59C6715FC0B4200579521 /* usr.png in Resources */,
+				153AAB7915FC4D2D0060C47F /* Fondo 1.png in Resources */,
+				153AAB7B15FC4D6D0060C47F /* enter.png in Resources */,
+				153AAB8115FC502D0060C47F /* login-boton-registro.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

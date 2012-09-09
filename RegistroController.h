@@ -20,5 +20,6 @@
 @property (strong, nonatomic) IBOutlet UIView *contentViewRegister;
 
 -(IBAction)submitRegister:(id)sender;
-
+-(void) moveToTopFields;
+-(void) moveToTopOriginFields;
 @end

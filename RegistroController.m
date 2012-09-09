@@ -36,6 +36,7 @@
     else if(textField == _nick){
         [_password resignFirstResponder];
     }
+    
 	return NO;
 }
 
@@ -48,7 +49,8 @@
     [_email resignFirstResponder];
     [_nick resignFirstResponder];
     [_password resignFirstResponder];
-    [self moveToTopOriginFields];
+    
+    
 }
 
 -(IBAction)submitRegister:(id)sender{
@@ -103,9 +105,9 @@
 {
     [UIView animateWithDuration:1.5
         delay:0.05
-        options: UIViewAnimationCurveEaseOut
+        options: UIViewAnimationOptionCurveLinear
         animations:^{
-            [_contentviewRegister setFrame:CGRectMake(500,700, _contentviewRegister.bounds.size.width, _contentviewRegister.bounds.size.height)];
+            [_contentviewRegister setFrame:CGRectMake(111,10, _contentviewRegister.bounds.size.width, _contentviewRegister.bounds.size.height)];
         }
         completion:^(BOOL finished){
     }];
@@ -115,17 +117,18 @@
 {
     [UIView animateWithDuration:1.5
         delay:0.05
-        options: UIViewAnimationCurveEaseOut
+        options: UIViewAnimationOptionCurveLinear
         animations:^{
-        [_contentviewRegister setFrame:CGRectMake(300,500, _contentviewRegister.bounds.size.width,_contentviewRegister.bounds.size.height)];
+        [_contentviewRegister setFrame:CGRectMake(111,10, _contentviewRegister.bounds.size.width,_contentviewRegister.bounds.size.height)];
         }
         completion:^(BOOL finished){
     }];
 }
 
+
 -(void)textFieldDidBeginEditing:(UITextField *)textField
 {
-    [self moveToTopFields];
+    
 }
 
 -(IBAction)editingEnded:(id)sender
