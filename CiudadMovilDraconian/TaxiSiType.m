@@ -15,7 +15,7 @@ long const CONFIG_SYNC_INTERVAL_WWAN = 40;
 long const CONFIG_SYNC_INTERVAL_WIFI = 20;
 
 
-NSString *const RESOURCE_FOR_SECURE = @"/taxisi-backend/api/usuario/";
+NSString *const RESOURCE_FOR_SECURE = @"/taxisi-backend/api/usuario/login/";
 
 NSString *const RESOURCE_GET_TAXIS = @"/taxisi-backend/api/taxi/";
 
@@ -27,6 +27,6 @@ NSString *const RESOURCE_GET_INCIDENTES = @"/taxisi-backend/api/incidenteVial/";
 
 NSString *const RESOURCE_GET_ORBRAS = @"/taxisi-backend/api/obras/";
 
-NSString *const RESOURCE_BASE = @"http://localhost:8080";
+NSString *const RESOURCE_BASE = @"http://192.168.1.3:8080";
 
 @end

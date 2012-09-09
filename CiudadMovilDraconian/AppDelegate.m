@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 
 #import "LoginController.h"
+#import "SyncSingleton.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,8 @@
     
     RKLogConfigureByName("RestKit/Network*", RKLogLevelError);
     RKLogConfigureByName("RestKit/ObjectMapping", RKLogLevelError);
+    
+    [SyncSingleton dictionaryMappingByResource];
     
     // Initialize RestKit
     RKObjectManager *objectManager = [RKObjectManager managerWithBaseURLString:@"http://localhost:8080"];

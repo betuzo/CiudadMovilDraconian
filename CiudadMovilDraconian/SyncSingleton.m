@@ -9,7 +9,7 @@
 #import "SyncSingleton.h"
 #import <RestKit/RestKit.h>
 #import "TaxiSiService.h"
-#import "TSRequest.h"
+#import "TSResponse.h"
 #import "TSUser.h"
 #import "TSTaxi.h"
 #import "TSTarjeton.h"
@@ -26,6 +26,8 @@
 
 static SyncSingleton *instanciaHelper = nil;
 
+static NSMutableDictionary * mappingsRest = nil;
+
 + (SyncSingleton*)getInstance
 {
     @synchronized([SyncSingleton class])
@@ -33,7 +35,6 @@ static SyncSingleton *instanciaHelper = nil;
         if (!instanciaHelper) {
             instanciaHelper = [[self alloc] init];
             [instanciaHelper initNotification];
-            
         }
         return instanciaHelper;
     }
@@ -100,24 +101,104 @@ static SyncSingleton *instanciaHelper = nil;
 	return isWebServerReachable;
 }
 
-- (void) initSync
-{
-    _isFinish = YES;
-    [syncTimer fire];
-}
-
 - (void) endSync
 {
-    _isFinish = NO;
     [syncTimer invalidate];
+    _isFinish = NO;
 }
 
-- (void) dictionaryMappingByResource
+- (void) initSync
 {
-    NSDictionary * dicByMapping = [[NSDictionary alloc] init];
-    TSRequest * peticion = [[TSRequest alloc] init];
+    [syncTimer fire];
+    _isFinish = YES;
+}
+
++ (void) dictionaryMappingByResource
+{    
+    mappingsRest = [[NSMutableDictionary alloc] initWithCapacity:6];
     
-    [dicByMapping setValue:peticion forKey:RESOURCE_FOR_SECURE];
+    RKObjectMapping *objetoMapping = [RKObjectMapping mappingForClass:[TSUser class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+     
+    RKObjectMapping *respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+
+    [mappingsRest setValue:respuesta forKey:RESOURCE_FOR_SECURE];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSTaxi class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_TAXIS];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSPasajero class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_PASAJEROS];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSPasajero class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_PASAJEROS_COMPARTIDOS];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSIncidente class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_INCIDENTES];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSObra class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_ORBRAS];
+}
+
++ (NSDictionary *) mappingsRest
+{
+    return mappingsRest;
 }
 
 

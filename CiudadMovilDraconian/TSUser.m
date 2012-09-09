@@ -10,9 +10,11 @@
 
 @implementation TSUser
 
+@synthesize id = _id;
 @synthesize type = _type;
 @synthesize nickname = _nickname;
 @synthesize password = _password;
+@synthesize role = _role;
 @synthesize longitude = _longitude;
 @synthesize latitude = _latitude;
 @synthesize compartir = _compartir;

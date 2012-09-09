@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import <RestKit/RestKit.h>
+#import "WebDelegate.h"
 
-@interface WebLoad : NSObject<RKObjectLoaderDelegate>
+@interface WebLoad : NSObject<RKObjectLoaderDelegate, RKRequestDelegate>
+
+@property (nonatomic, assign) id<WebDelegate> delegate;
+
+- (void) loadWithResource: (NSString *) resource andMapping: (RKObjectMapping *) mapping andDelegate: (id) delegate andParameter: (NSArray *) parameteres;
 
 @end
