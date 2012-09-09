@@ -23,21 +23,8 @@
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
 {
-<<<<<<< HEAD
-    TSRequest *peticion = [objects objectAtIndex:0];
-    
-    NSString *info = [NSString stringWithFormat:
-                      @"peticion %c\n"
-                      @"Total Productos %u\n",
-                      [peticion success] ,
-                      [[peticion data] count]
-                      ];
-    
-    NSLog(@"Loaded statuses: %@", info);
-=======
     TSResponse *respuesta = [objects objectAtIndex:0];
     [_delegate modelLoadCompletedWithResponse:respuesta];
->>>>>>> 89f92bb0118b83fe4040ee5b780533b624bd54b9
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
