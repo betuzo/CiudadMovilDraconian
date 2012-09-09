@@ -10,9 +10,11 @@
 
 @interface TSTaxi : NSObject
 
+@property (nonatomic) long id;
 @property (nonatomic, strong) UIImage *type;
 @property (nonatomic, strong) NSString *tipo;
 @property (nonatomic, strong) NSString *placas;
+@property (nonatomic, strong) NSString *vehiculo;
 @property (nonatomic, strong) NSNumber *longitude;
 @property (nonatomic, strong) NSNumber *latitude;
 
