@@ -105,6 +105,10 @@ static NSMutableDictionary * mappingsRest = nil;
                            [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].latitude], 
                            [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].longitude],
                            nil];
+         
+        [_webLoadPasajerosCompartidos loadWithResource:RESOURCE_GET_PASAJEROS_COMPARTIDOS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_PASAJEROS_COMPARTIDOS] andDelegate:self andParameter:params];
+         _iContSync = _iContSync + 1;*/
+         /*
         [_webLoadIncidencias loadWithResource:RESOURCE_GET_INCIDENTES andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_INCIDENTES] andDelegate:self andParameter:params];
         _iContSync = _iContSync + 1;
                
@@ -281,10 +285,12 @@ static NSMutableDictionary * mappingsRest = nil;
             [TaxiSiService sitios:[response data]];
             [_taxiSi addAnnotationSitios];
         }
-        if ([element isKindOfClass:[TSPasajero class]]) 
+        if ([element isKindOfClass:[TSPasajero class]]){
             [TaxiSiService pasajerosCompartidos:[response data]];
-        if ([element isKindOfClass:[TSPasajero class]]) 
-            [TaxiSiService pasajeros:[response data]];
+            [_taxiSi addAnnotationPasajerosCompartir];
+        }
+        /*if ([element isKindOfClass:[TSPasajero class]]) 
+            [TaxiSiService pasajeros:[response data]];*/
         if ([element isKindOfClass:[TSIncidente class]]){
             [TaxiSiService incidentes:[response data]];
             [_taxiSi addAnnotationIncidentes];

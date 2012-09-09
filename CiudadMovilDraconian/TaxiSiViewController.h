@@ -24,5 +24,6 @@
 -(void) addAnnotationSitios;
 -(void) addAnnotationIncidentes;
 -(void) addAnnotationObras;
+-(void) addAnnotationPasajerosCompartir;
 
 @end
