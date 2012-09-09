@@ -13,6 +13,7 @@
 @implementation WebLoad
 
 @synthesize delegate = _delegate;
+@synthesize resourceComplete = _resourceComplete;
 
 #pragma mark RKObjectLoaderDelegate methods
 
@@ -23,12 +24,14 @@
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
 {
+    [[RKObjectManager sharedManager].mappingProvider removeObjectMappingForKeyPath:_resourceComplete];
     TSResponse *respuesta = [objects objectAtIndex:0];
     [_delegate modelLoadCompletedWithResponse:respuesta];
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
 {
+    [[RKObjectManager sharedManager].mappingProvider removeObjectMappingForKeyPath:_resourceComplete];
     [_delegate modelLoadCompletedWithError:error];
 }
 
@@ -45,14 +48,18 @@
       
     objectManager.client.baseURL = [RKURL URLWithString:RESOURCE_BASE];
     
-    NSString *resourceComplete = resource;
+    NSString *resourceWithParams = resource;
     
     for (id element in parameteres) {
-        resourceComplete = [NSString stringWithFormat:@"%@%@/", resourceComplete, element];
+        resourceWithParams = [NSString stringWithFormat:@"%@%@/", resourceWithParams, element];
     } 
+    _resourceComplete = resourceWithParams;
     
-    [[RKObjectManager sharedManager].mappingProvider setObjectMapping:mapping forKeyPath:resourceComplete];
-    [objectManager loadObjectsAtResourcePath:resourceComplete delegate:self];
+    [[RKObjectManager sharedManager].mappingProvider objectMappingForKeyPath:resourceWithParams];
+    
+    [[RKObjectManager sharedManager].mappingProvider setObjectMapping:mapping forKeyPath:resourceWithParams];
+        
+    [objectManager loadObjectsAtResourcePath:resourceWithParams delegate:self];
 }
 
 @end

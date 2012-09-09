@@ -20,5 +20,7 @@
 -(IBAction)identificarTaxi:(id)sender;
 
 -(void)showUserLocation;
+-(void) addAnnotationTaxis;
+-(void) addAnnotationSitios;
 
 @end

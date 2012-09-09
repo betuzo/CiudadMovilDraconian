@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WebLoad.h"
+#import "TaxiSiViewController.h"
 
 @class RKReachabilityObserver;
 @interface SyncSingleton : NSObject<WebDelegate>
@@ -22,10 +23,12 @@
 @property(nonatomic) int iContSync;
 
 @property(nonatomic, strong) WebLoad * webLoadTaxis;
+@property(nonatomic, strong) WebLoad * webLoadSitios;
 @property(nonatomic, strong) WebLoad * webLoadPasajeros;
 @property(nonatomic, strong) WebLoad * webLoadPasajerosCompartidos;
 @property(nonatomic, strong) WebLoad * webLoadIncidencias;
 @property(nonatomic, strong) WebLoad * webLoadObras;
+@property(nonatomic, strong) TaxiSiViewController * taxiSi;
 
 - (BOOL) isWebServerReachable;
 - (void) initNotification;

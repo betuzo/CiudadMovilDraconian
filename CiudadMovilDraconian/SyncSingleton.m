@@ -24,11 +24,13 @@
 @synthesize isConnected = _isConnected;
 @synthesize isFinish = _isFinish;
 @synthesize webLoadTaxis = _webLoadTaxis;
+@synthesize webLoadSitios = _webLoadSitios;
 @synthesize webLoadPasajeros = _webLoadPasajeros;
 @synthesize webLoadPasajerosCompartidos = _webLoadPasajerosCompartidos;
 @synthesize webLoadIncidencias = _webLoadIncidencias;
 @synthesize webLoadObras = _webLoadObras;
 @synthesize iContSync = _iContSync;
+@synthesize taxiSi = _taxiSi;
 
 static SyncSingleton *instanciaHelper = nil;
 
@@ -56,6 +58,7 @@ static NSMutableDictionary * mappingsRest = nil;
     _webLoadPasajerosCompartidos = [[WebLoad alloc] init];
     _webLoadIncidencias = [[WebLoad alloc] init];
     _webLoadObras = [[WebLoad alloc] init];
+    _webLoadSitios = [[WebLoad alloc] init];
     
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(reachabilityChanged:)
@@ -72,13 +75,29 @@ static NSMutableDictionary * mappingsRest = nil;
 - (void) syncGeneral
 {
     if (_isFinish == YES || _iContSync == 0) {
-        
-        NSArray *params = [NSArray arrayWithObjects:
+        if ([[TaxiSiService userLogged].role isEqualToString:@"USUARIO"]){
+            NSArray *params = [NSArray arrayWithObjects:
                             [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].latitude], 
                             [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].longitude],
                             nil];
-        [_webLoadTaxis loadWithResource:RESOURCE_GET_TAXIS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_TAXIS] andDelegate:self andParameter:params];
-        _iContSync = _iContSync + 1;
+            [_webLoadTaxis loadWithResource:RESOURCE_GET_TAXIS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_TAXIS] andDelegate:self andParameter:params];
+            _iContSync = _iContSync + 1;
+            
+            params = [NSArray arrayWithObjects:
+                               [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].latitude], 
+                               [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].longitude],
+                               nil];
+            [_webLoadSitios loadWithResource:RESOURCE_GET_SITIOS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_SITIOS] andDelegate:self andParameter:params];
+            _iContSync = _iContSync + 1;
+        }
+        if ([[TaxiSiService userLogged].role isEqualToString:@"CHOFER"]){
+            NSArray *params = [NSArray arrayWithObjects:
+                               [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].latitude], 
+                               [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].longitude],
+                               nil];
+            [_webLoadTaxis loadWithResource:RESOURCE_GET_PASAJEROS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_PASAJEROS] andDelegate:self andParameter:params];
+            _iContSync = _iContSync + 1;
+        }
     }
 }
 
@@ -150,20 +169,34 @@ static NSMutableDictionary * mappingsRest = nil;
 
     [mappingsRest setValue:respuesta forKey:RESOURCE_FOR_SECURE];
     
-    objetoMapping = [RKObjectMapping mappingForClass:[TSTaxi class]];
-    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
-    [objetoMapping mapKeyPath:@"latitude" toAttribute:@"latitude"];
-    [objetoMapping mapKeyPath:@"longitude" toAttribute:@"longitude"];
-    [objetoMapping mapKeyPath:@"placas" toAttribute:@"placas"];
-    [objetoMapping mapKeyPath:@"vehiculo" toAttribute:@"vehiculo"];
-    [objetoMapping mapKeyPath:@"tipo" toAttribute:@"tipo"];
+    RKObjectMapping *objetoMappingTaxi = [RKObjectMapping mappingForClass:[TSTaxi class]];
+    [objetoMappingTaxi mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMappingTaxi mapKeyPath:@"latitude" toAttribute:@"latitude"];
+    [objetoMappingTaxi mapKeyPath:@"longitude" toAttribute:@"longitude"];
+    [objetoMappingTaxi mapKeyPath:@"placas" toAttribute:@"placas"];
+    [objetoMappingTaxi mapKeyPath:@"vehiculo" toAttribute:@"vehiculo"];
+    [objetoMappingTaxi mapKeyPath:@"tipo" toAttribute:@"tipo"];
 
-    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
-    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
-    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
-    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    RKObjectMapping *respuestaTaxi = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuestaTaxi mapKeyPath:@"success" toAttribute:@"success"];
+    [respuestaTaxi mapKeyPath:@"message" toAttribute:@"message"];
+    [respuestaTaxi mapRelationship:@"data" withMapping:objetoMappingTaxi];
     
-    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_TAXIS];
+    [mappingsRest setValue:respuestaTaxi forKey:RESOURCE_GET_TAXIS];
+    
+    RKObjectMapping *objetoMappingSitio = [RKObjectMapping mappingForClass:[TSSitio class]];
+    [objetoMappingSitio mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMappingSitio mapKeyPath:@"latitude" toAttribute:@"latitude"];
+    [objetoMappingSitio mapKeyPath:@"longitude" toAttribute:@"longitude"];
+    [objetoMappingSitio mapKeyPath:@"nombre" toAttribute:@"nombre"];
+    [objetoMappingSitio mapKeyPath:@"telefono" toAttribute:@"telefono"];
+    
+    RKObjectMapping *respuestaSitio = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuestaSitio mapKeyPath:@"success" toAttribute:@"success"];
+    [respuestaSitio mapKeyPath:@"message" toAttribute:@"message"];
+    [respuestaSitio mapRelationship:@"data" withMapping:objetoMappingSitio];
+    
+    [mappingsRest setValue:respuestaSitio forKey:RESOURCE_GET_SITIOS];
     
     objetoMapping = [RKObjectMapping mappingForClass:[TSPasajero class]];
     [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
@@ -226,6 +259,26 @@ static NSMutableDictionary * mappingsRest = nil;
 - (void)modelLoadCompletedWithResponse:(TSResponse *)response
 {
     _iContSync = _iContSync - 1;
+    if ([response data]!=nil &&[[response data] count]>0) {
+        id element = [[response data] objectAtIndex:0];
+        NSLog(@"%@", element);
+        if ([element isKindOfClass:[TSTaxi class]]){
+            [TaxiSiService taxis:[response data]];
+            [_taxiSi addAnnotationTaxis];
+        }
+        if ([element isKindOfClass:[TSSitio class]]){
+            [TaxiSiService sitios:[response data]];
+            [_taxiSi addAnnotationSitios];
+        }
+        if ([element isKindOfClass:[TSPasajero class]]) 
+            [TaxiSiService pasajerosCompartidos:[response data]];
+        if ([element isKindOfClass:[TSPasajero class]]) 
+            [TaxiSiService pasajeros:[response data]];
+        if ([element isKindOfClass:[TSIncidente class]]) 
+            [TaxiSiService incidentes:[response data]];
+        if ([element isKindOfClass:[TSObra class]]) 
+            [TaxiSiService obras:[response data]];
+    }
 }
 
 - (void)modelLoadCompletedWithError:(NSError *)error

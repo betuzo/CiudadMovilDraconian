@@ -27,6 +27,20 @@ NSString *const RESOURCE_GET_INCIDENTES = @"/taxisi-backend/api/incidenteVial/";
 
 NSString *const RESOURCE_GET_ORBRAS = @"/taxisi-backend/api/obras/";
 
+NSString *const RESOURCE_GET_SITIOS = @"/taxisi-backend/api/sitioTaxi/ubicacion/";
+
 NSString *const RESOURCE_BASE = @"http://localhost:8080";
+
+NSString *const ANNOTATION_TYPE_TAXI = @"ANNOTATION_TAXI";
+
+NSString *const ANNOTATION_TYPE_PASAJERO = @"ANNOTATION_PASAJERO";
+
+NSString *const ANNOTATION_TYPE_PASAJERO_COMPARTIDO = @"ANNOTATION_PASAJERO_COMPARTIDO";
+
+NSString *const ANNOTATION_TYPE_INCIDENTE = @"ANNOTATION_INCIDENTE";
+
+NSString *const ANNOTATION_TYPE_OBRA = @"ANNOTATION_OBRA";
+
+NSString *const ANNOTATION_TYPE_SITIO = @"ANNOTATION_SITIO";
 
 @end

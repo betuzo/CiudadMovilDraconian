@@ -13,6 +13,7 @@
 @interface WebLoad : NSObject<RKObjectLoaderDelegate, RKRequestDelegate>
 
 @property (nonatomic, assign) id<WebDelegate> delegate;
+@property (nonatomic, strong) NSString * resourceComplete;
 
 - (void) loadWithResource: (NSString *) resource andMapping: (RKObjectMapping *) mapping andDelegate: (id) delegate andParameter: (NSArray *) parameteres;
 

@@ -10,6 +10,7 @@
 
 @implementation TSSitio
 
+@synthesize id = _id;
 @synthesize type = _type;
 @synthesize nombre = _nombre;
 @synthesize telefono = _telefono;
