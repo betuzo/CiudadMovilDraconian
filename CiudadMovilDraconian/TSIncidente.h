@@ -10,6 +10,7 @@
 
 @interface TSIncidente : NSObject
 
+@property (nonatomic) long id;
 @property (nonatomic, strong) UIImage *type;
 @property (nonatomic, strong) NSString *description;
 @property (nonatomic) double longitude;

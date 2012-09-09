@@ -1,4 +1,4 @@
-//
+ //
 //  TaxiSiViewController.m
 //  CiudadMovilDraconian
 //
@@ -10,6 +10,9 @@
 #import "SyncSingleton.h"
 #import "TSTaxi.h"
 #import "TSSitio.h"
+#import "TSIncidente.h"
+#import "TSObra.h"
+#import "TSPasajero.h"
 
 @interface TaxiSiViewController ()
 
@@ -67,8 +70,8 @@
 }
 
 -(IBAction)identificarTaxi:(id)sender{
-    IdentificarTaxiViewController *identificarTaxi = [[IdentificarTaxiViewController alloc] initWithNibName:nil bundle:nil];
-    [self presentModalViewController:identificarTaxi animated:YES];
+    IdentificarTaxiViewController *identificarTaxi = [[IdentificarTaxiViewController alloc] initWithNibName:@"IdentificarTaxiViewController" bundle:nil];
+    [self.navigationController pushViewController:identificarTaxi animated:YES];
 }
 
 - (void) pedirTaxi:(id) sender
@@ -168,6 +171,26 @@
     }
 }
 
+-(void) addAnnotationIncidentes
+{
+    [self removeAnnotationByType:ANNOTATION_TYPE_INCIDENTE];
+    for (TSIncidente *element in [TaxiSiService incidentes]) {
+        CLLocationCoordinate2D theCoordinate;
+        theCoordinate.latitude = element.latitude;
+        theCoordinate.longitude = element.longitude;
+        
+        CiudadPinAnotation* myAnnotation=[[CiudadPinAnotation alloc] init];
+        
+        myAnnotation.coordinate=theCoordinate;
+        myAnnotation.title = @"Incidente";
+        myAnnotation.description=@"Incidente";
+        myAnnotation.imageIcon = [TaxiSiService imageByTypeAnnotetion:ANNOTATION_TYPE_INCIDENTE];
+        
+        [_ciudadMapView addAnnotation:myAnnotation];
+    }
+} 
+
+
 -(void) addAnnotationTaxis
 {
     [self removeAnnotationByType:ANNOTATION_TYPE_TAXI];
@@ -185,6 +208,25 @@
         
         [_ciudadMapView addAnnotation:myAnnotation];
     }
+} 
+
+
+-(void) addAnnotationObras
+{
+    [self removeAnnotationByType:ANNOTATION_TYPE_OBRA];
+    for (TSObra *element in [TaxiSiService obras]) {
+        CLLocationCoordinate2D theCoordinate;
+        theCoordinate.latitude = element.latitude;
+        theCoordinate.longitude = element.longitude;
+        
+        CiudadPinAnotation* myAnnotation=[[CiudadPinAnotation alloc] init];
+        
+        myAnnotation.coordinate=theCoordinate;
+        myAnnotation.title = @"Obras";
+        myAnnotation.imageIcon = [TaxiSiService imageByTypeAnnotetion:ANNOTATION_TYPE_OBRA];
+        
+        [_ciudadMapView addAnnotation:myAnnotation];
+    }
 }
 
 -(void) removeAnnotationByType:(NSString *) type
@@ -199,4 +241,5 @@
     }
     [_ciudadMapView removeAnnotations:toRemove];
 }
+
 @end

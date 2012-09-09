@@ -10,6 +10,7 @@
 
 @implementation TSObra
 
+@synthesize id = _id;
 @synthesize type = _type;
 @synthesize description = _description;
 @synthesize longitude = _longitude;

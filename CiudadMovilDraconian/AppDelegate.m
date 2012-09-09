@@ -25,7 +25,7 @@
     [SyncSingleton dictionaryMappingByResource];
     
     // Initialize RestKit
-    RKObjectManager *objectManager = [RKObjectManager managerWithBaseURLString:@"http://localhost:8080"];
+    RKObjectManager *objectManager = [RKObjectManager managerWithBaseURLString:RESOURCE_BASE];
     
     // Enable automatic network activity indicator management
     objectManager.client.requestQueue.showsNetworkActivityIndicatorWhenBusy = YES;
