@@ -107,7 +107,7 @@
 					<object class="IBUIButton" id="1073592985">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{113, 281}, {95, 92}}</string>
+						<string key="NSFrame">{{113, 316}, {95, 92}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -255,7 +255,7 @@
 					<object class="IBUILabel" id="982930761">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{170, 52}, {91, 21}}</string>
+						<string key="NSFrame">{{161, 50}, {91, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="200962342"/>
@@ -305,13 +305,13 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">toolbar-usuario.png</string>
+							<string key="NSResourceName">avatar.png</string>
 						</object>
 					</object>
-					<object class="IBUILabel" id="64605624">
+					<object class="IBUILabel" id="883313920">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{5, 359}, {295, 21}}</string>
+						<string key="NSFrame">{{5, 390}, {295, 21}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -432,7 +432,6 @@
 						<int key="objectID">1</int>
 						<reference key="object" ref="191373211"/>
 						<array class="NSMutableArray" key="children">
-							<reference ref="982930761"/>
 							<reference ref="222950161"/>
 							<reference ref="240936994"/>
 							<reference ref="200962342"/>
@@ -444,7 +443,8 @@
 							<reference ref="790080025"/>
 							<reference ref="222007945"/>
 							<reference ref="1073592985"/>
-							<reference ref="64605624"/>
+							<reference ref="883313920"/>
+							<reference ref="982930761"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -521,7 +521,7 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">26</int>
-						<reference key="object" ref="64605624"/>
+						<reference key="object" ref="883313920"/>
 						<reference key="parent" ref="191373211"/>
 					</object>
 				</array>
@@ -613,8 +613,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="avatar.png">{95, 95}</string>
 			<string key="fondo4.png">{320, 460}</string>
-			<string key="toolbar-usuario.png">{20, 20}</string>
 			<string key="tweet.png">{55, 45}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1498</string>
