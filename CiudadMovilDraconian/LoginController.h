@@ -10,12 +10,16 @@
 #import <RestKit/RestKit.h>
 #import "MainTabViewController.h"
 #import "RegistroController.h"
+#import "WebDelegate.h"
+#import "WebLoad.h"
 
-@interface LoginController : UIViewController<RKObjectLoaderDelegate,UITextFieldDelegate>
+@interface LoginController : UIViewController<UITextFieldDelegate, WebDelegate>
 
 @property (strong, nonatomic) IBOutlet UITextField *txtUsuario;
 @property (strong, nonatomic) IBOutlet UITextField *txtPassword;
 @property (strong, nonatomic) IBOutlet UIView *contentView;
+@property (strong, nonatomic) WebLoad * webLoad;
+
 -(IBAction)presentHomeView:(id)sender;
 -(IBAction)registerView:(id)sender;
 

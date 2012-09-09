@@ -9,7 +9,7 @@
 #import "SyncSingleton.h"
 #import <RestKit/RestKit.h>
 #import "TaxiSiService.h"
-#import "TSRequest.h"
+#import "TSResponse.h"
 #import "TSUser.h"
 #import "TSTaxi.h"
 #import "TSTarjeton.h"
@@ -26,6 +26,8 @@
 
 static SyncSingleton *instanciaHelper = nil;
 
+static NSMutableDictionary * mappingsRest = nil;
+
 + (SyncSingleton*)getInstance
 {
     @synchronized([SyncSingleton class])
@@ -33,7 +35,6 @@ static SyncSingleton *instanciaHelper = nil;
         if (!instanciaHelper) {
             instanciaHelper = [[self alloc] init];
             [instanciaHelper initNotification];
-            
         }
         return instanciaHelper;
     }
@@ -112,46 +113,92 @@ static SyncSingleton *instanciaHelper = nil;
     _isFinish = YES;
 }
 
-- (void) dictionaryMappingByResource
++ (void) dictionaryMappingByResource
+{    
+    mappingsRest = [[NSMutableDictionary alloc] initWithCapacity:6];
+    
+    RKObjectMapping *objetoMapping = [RKObjectMapping mappingForClass:[TSUser class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+     
+    RKObjectMapping *respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+
+    [mappingsRest setValue:respuesta forKey:RESOURCE_FOR_SECURE];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSTaxi class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_TAXIS];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSPasajero class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_PASAJEROS];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSPasajero class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_PASAJEROS_COMPARTIDOS];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSIncidente class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_INCIDENTES];
+    
+    objetoMapping = [RKObjectMapping mappingForClass:[TSObra class]];
+    [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
+    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
+    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
+    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
+    
+    respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
+    [respuesta mapKeyPath:@"success" toAttribute:@"success"];
+    [respuesta mapKeyPath:@"message" toAttribute:@"message"];
+    [respuesta mapRelationship:@"data" withMapping:objetoMapping];
+    
+    [mappingsRest setValue:respuesta forKey:RESOURCE_GET_ORBRAS];
+}
+
++ (NSDictionary *) mappingsRest
 {
-    NSDictionary * dicByMapping = [[NSDictionary alloc] init];
-    TSRequest * peticion = [[TSRequest alloc] init];
-    
-    // Load the object model via RestKit
-    RKObjectMapping *productoMapping = [RKObjectMapping mappingForClass:[Producto class]];
-    [productoMapping mapKeyPath:@"ProductId" toAttribute:@"productId"];
-    [productoMapping mapKeyPath:@"name" toAttribute:@"name"];
-    [productoMapping mapKeyPath:@"description" toAttribute:@"description"];
-    [productoMapping mapKeyPath:@"category" toAttribute:@"category"];
-    [productoMapping mapKeyPath:@"subcategory" toAttribute:@"subcategory"];
-    [productoMapping mapKeyPath:@"Info" toAttribute:@"info"];
-    [productoMapping mapKeyPath:@"Picture" toAttribute:@"picture"];
-     
-    RKObjectMapping *catalogMapping = [RKObjectMapping mappingForClass:[Catalog class]];
-    [catalogMapping mapKeyPath:@"id" toAttribute:@"idt"];
-    [catalogMapping mapRelationship:@"products" withMapping:productoMapping];
-     
-    RKObjectMapping *priceListMapping = [RKObjectMapping mappingForClass:[PriceList class]];
-    [priceListMapping mapKeyPath:@"xmlns" toAttribute:@"xmlns"];
-    [priceListMapping mapRelationship:@"catalogs" withMapping:catalogMapping];
-     
-    RKObjectMapping *peticionCatalogoMapping = [RKObjectMapping mappingForClass:[PeticionCatalogo class]];
-    [peticionCatalogoMapping mapRelationship:@"priceList" withMapping:priceListMapping];
-     
-    NSLog(@"timeout %f", [[[RKObjectManager sharedManager] client] timeoutInterval]);
-     
-    [[[RKObjectManager sharedManager] client] setTimeoutInterval:800];
-    [[RKObjectManager sharedManager] setSerializationMIMEType:RKMIMETypeJSON];
-    [[RKParserRegistry 
-    sharedRegistry] setParserClass:[RKJSONParserJSONKit class] 
-    forMIMEType:@"text/html"];
-     
-    RKObjectManager *objectManager = [RKObjectManager sharedManager];
-    objectManager.client.baseURL = [RKURL URLWithString:@"http://localhost:8080"];
-    [[RKObjectManager sharedManager].mappingProvider setObjectMapping:peticionCatalogoMapping forKeyPath:@"/json-iPad/shoppingCart/getCatalogProduct"];
-    [objectManager loadObjectsAtResourcePath:@"/json-iPad/shoppingCart/getCatalogProduct" delegate:self];
-    
-    [dicByMapping setValue:peticion forKey:RESOURCE_FOR_SECURE];
+    return mappingsRest;
 }
 
 

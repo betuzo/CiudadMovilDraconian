@@ -38,7 +38,7 @@
 		5989FC3F15FBA373004690EE /* tab-config.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3C15FBA373004690EE /* tab-config.png */; };
 		5989FC4015FBA373004690EE /* tab-mi-viaje.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3D15FBA373004690EE /* tab-mi-viaje.png */; };
 		5989FC4115FBA373004690EE /* tab-taxi-si.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FC3E15FBA373004690EE /* tab-taxi-si.png */; };
-		5989FC4415FBA966004690EE /* TSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4315FBA966004690EE /* TSRequest.m */; };
+		5989FC4415FBA966004690EE /* TSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4315FBA966004690EE /* TSResponse.m */; };
 		5989FC4A15FBAA9F004690EE /* TaxiSiService.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4915FBAA9F004690EE /* TaxiSiService.m */; };
 		5989FC4E15FBAB6A004690EE /* TSUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC4D15FBAB6A004690EE /* TSUser.m */; };
 		5989FC5115FBAB81004690EE /* TSTaxi.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC5015FBAB81004690EE /* TSTaxi.m */; };
@@ -163,8 +163,8 @@
 		5989FC3C15FBA373004690EE /* tab-config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-config.png"; sourceTree = "<group>"; };
 		5989FC3D15FBA373004690EE /* tab-mi-viaje.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-mi-viaje.png"; sourceTree = "<group>"; };
 		5989FC3E15FBA373004690EE /* tab-taxi-si.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab-taxi-si.png"; sourceTree = "<group>"; };
-		5989FC4215FBA966004690EE /* TSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSRequest.h; sourceTree = "<group>"; };
-		5989FC4315FBA966004690EE /* TSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSRequest.m; sourceTree = "<group>"; };
+		5989FC4215FBA966004690EE /* TSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSResponse.h; sourceTree = "<group>"; };
+		5989FC4315FBA966004690EE /* TSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSResponse.m; sourceTree = "<group>"; };
 		5989FC4815FBAA9F004690EE /* TaxiSiService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TaxiSiService.h; sourceTree = "<group>"; };
 		5989FC4915FBAA9F004690EE /* TaxiSiService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxiSiService.m; sourceTree = "<group>"; };
 		5989FC4C15FBAB6A004690EE /* TSUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSUser.h; sourceTree = "<group>"; };
@@ -189,6 +189,7 @@
 		5989FC7E15FBD779004690EE /* TaxiSiType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TaxiSiType.m; sourceTree = "<group>"; };
 		5989FC8015FBEFD2004690EE /* WebLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebLoad.h; sourceTree = "<group>"; };
 		5989FC8115FBEFD2004690EE /* WebLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebLoad.m; sourceTree = "<group>"; };
+		5989FC9015FC0909004690EE /* WebDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebDelegate.h; sourceTree = "<group>"; };
 		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
 		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		59FA827D15FB7D4500A048A2 /* MainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabViewController.h; sourceTree = "<group>"; };
@@ -372,6 +373,7 @@
 				5989FC7815FBBCEE004690EE /* SyncSingleton.m */,
 				5989FC8015FBEFD2004690EE /* WebLoad.h */,
 				5989FC8115FBEFD2004690EE /* WebLoad.m */,
+				5989FC9015FC0909004690EE /* WebDelegate.h */,
 			);
 			name = Sync;
 			sourceTree = "<group>";
@@ -408,8 +410,8 @@
 		5989FC4B15FBAB35004690EE /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				5989FC4215FBA966004690EE /* TSRequest.h */,
-				5989FC4315FBA966004690EE /* TSRequest.m */,
+				5989FC4215FBA966004690EE /* TSResponse.h */,
+				5989FC4315FBA966004690EE /* TSResponse.m */,
 				5989FC4C15FBAB6A004690EE /* TSUser.h */,
 				5989FC4D15FBAB6A004690EE /* TSUser.m */,
 				5989FC4F15FBAB81004690EE /* TSTaxi.h */,
@@ -717,7 +719,7 @@
 				59FA82A115FB80F800A048A2 /* ParentTaxiSiViewController.m in Sources */,
 				59FA82A615FB810B00A048A2 /* TaxiSiViewController.m in Sources */,
 				59FA82AA15FB87DF00A048A2 /* CiudadPinAnotation.m in Sources */,
-				5989FC4415FBA966004690EE /* TSRequest.m in Sources */,
+				5989FC4415FBA966004690EE /* TSResponse.m in Sources */,
 				5989FC4A15FBAA9F004690EE /* TaxiSiService.m in Sources */,
 				5989FC4E15FBAB6A004690EE /* TSUser.m in Sources */,
 				5989FC5115FBAB81004690EE /* TSTaxi.m in Sources */,

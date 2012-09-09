@@ -1,5 +1,5 @@
 //
-//  TSRequest.h
+//  TSResponse.h
 //  CiudadMovilDraconian
 //
 //  Created by Mobiik on 08/09/12.
@@ -8,10 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface TSRequest : NSObject
+@interface TSResponse : NSObject
 
 @property (nonatomic) BOOL success;
 @property (nonatomic, strong) NSArray *data;
+@property (nonatomic, strong) NSString *message;
 @property (nonatomic, strong) NSNumber *count;
 
 @end

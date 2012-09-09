@@ -22,6 +22,10 @@
 - (void) initNotification;
 - (void) initSync;
 - (void) endSync;
-+ (SyncSingleton*) getInstance;
+
++ (void) dictionaryMappingByResource;
+
++ (SyncSingleton *) getInstance;
++ (NSDictionary *) mappingsRest;
 
 @end

@@ -7,9 +7,12 @@
 //
 
 #import "WebLoad.h"
-#import "TSRequest.h"
+#import "TSResponse.h"
+#import <RestKit/RKJSONParserJSONKit.h>
 
 @implementation WebLoad
+
+@synthesize delegate = _delegate;
 
 #pragma mark RKObjectLoaderDelegate methods
 
@@ -20,23 +23,37 @@
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
 {
-    TSRequest *peticion = [objects objectAtIndex:0];
-    
-    NSString *info = [NSString stringWithFormat:
-                      @"peticion %@\n"
-                      @"Total Productos %@\n",
-                      [peticion success] ,
-                      [[peticion data] count]
-                      ];
-    
-    NSLog(@"Loaded statuses: %@", info);
+    TSResponse *respuesta = [objects objectAtIndex:0];
+    [_delegate modelLoadCompletedWithResponse:respuesta];
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
 {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
-    NSLog(@"Hit error: %@", error);
+    [_delegate modelLoadCompletedWithError:error];
+}
+
+- (void) loadWithResource: (NSString *) resource andMapping: (RKObjectMapping *) mapping andDelegate: (id) newDelegate andParameter: (NSArray *) parameteres
+{
+    _delegate = newDelegate;
+    NSLog(@"timeout %f", [[[RKObjectManager sharedManager] client] timeoutInterval]);
+    
+    [[[RKObjectManager sharedManager] client] setTimeoutInterval:800];
+    [[RKObjectManager sharedManager] setSerializationMIMEType:RKMIMETypeJSON];
+    /*[[RKParserRegistry sharedRegistry] setParserClass:[RKJSONParserJSONKit class] forMIMEType:@"text/html"];*/
+    
+    RKObjectManager *objectManager = [RKObjectManager sharedManager];
+      
+    objectManager.client.baseURL = [RKURL URLWithString:RESOURCE_BASE];
+    
+    NSString *resourceComplete = resource;
+    
+    for (id element in parameteres) {
+        resourceComplete = [NSString stringWithFormat:@"%@%@/", resourceComplete, element];
+    } 
+    
+    [[RKObjectManager sharedManager].mappingProvider setObjectMapping:mapping forKeyPath:resourceComplete];
+    
+    [objectManager loadObjectsAtResourcePath:resourceComplete delegate:self];
 }
 
 @end
