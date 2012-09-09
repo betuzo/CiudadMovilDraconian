@@ -52,7 +52,6 @@
     } 
     
     [[RKObjectManager sharedManager].mappingProvider setObjectMapping:mapping forKeyPath:resourceComplete];
-    
     [objectManager loadObjectsAtResourcePath:resourceComplete delegate:self];
 }
 
