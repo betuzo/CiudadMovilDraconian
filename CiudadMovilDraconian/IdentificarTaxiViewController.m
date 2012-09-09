@@ -16,7 +16,29 @@
 
 @implementation IdentificarTaxiViewController
 
+@synthesize txtPlacas = _txtPlacas;
+@synthesize txtTarjeton = _txtTarjeton;
+
 @synthesize identificaTaxiNavigationController = _identificaTaxiNavigationController;
+
+
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+	if (textField == _txtPlacas ) {
+		[_txtTarjeton becomeFirstResponder];
+	}
+	else if (textField == _txtTarjeton){
+		[_txtTarjeton resignFirstResponder];
+	}
+	return NO;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[_txtPlacas resignFirstResponder];
+	[_txtTarjeton resignFirstResponder];
+}
 
 -(IBAction)perfilTaxi:(id)sender{
     PerfilTaxiViewController *perfilTaxi = [[PerfilTaxiViewController alloc] initWithNibName:nil bundle:nil];
