@@ -7,11 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PerfilTaxiViewController.h"
 
 @interface IdentificarTaxiViewController : UIViewController
 
 @property (nonatomic,strong) UINavigationController *identificaTaxiNavigationController;
 
--(IBAction)identificarTaxi:(id)sender;
+-(IBAction)perfilTaxi:(id)sender;
 
 @end

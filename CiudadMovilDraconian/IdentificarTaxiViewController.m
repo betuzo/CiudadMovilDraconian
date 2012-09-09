@@ -16,8 +16,9 @@
 
 @synthesize identificaTaxiNavigationController = _identificaTaxiNavigationController;
 
--(IBAction)identificarTaxi:(id)sender{
-    //Falta metodo que envia a identificar placas 
+-(IBAction)perfilTaxi:(id)sender{
+    PerfilTaxiViewController *perfilTaxi = [[PerfilTaxiViewController alloc] initWithNibName:nil bundle:nil];
+    [self presentModalViewController:perfilTaxi animated:YES];
 }
 
 
@@ -34,6 +35,33 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    CGRect rectButton;
+    
+    rectButton.size.width = 40;
+    rectButton.size.height = 40;
+    
+    rectButton.origin.x = 0;
+    rectButton.origin.y = 0;
+    
+    UIButton *leftButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    UIButton *rightButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [rightButtonItem addTarget:self action:@selector(pedirTaxi:) forControlEvents:UIControlEventTouchUpInside];
+    [rightButtonItem setFrame:rectButton];
+    [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"toolbar-pedir-taxi"] forState:UIControlStateNormal];
+    
+    [leftButtonItem addTarget:self action:@selector(verIncidenciasObras:) forControlEvents:UIControlEventTouchUpInside];
+    [leftButtonItem setFrame:rectButton];
+    [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"toolbar-config"] forState:UIControlStateNormal];
+    
+    UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButtonItem];
+    
+    UIBarButtonItem * rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButtonItem];
+    
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+
     // Do any additional setup after loading the view from its nib.
 }
 
