@@ -34,9 +34,43 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    CGRect rectButton;
+    
+    rectButton.size.width = 40;
+    rectButton.size.height = 40;
+    
+    rectButton.origin.x = 0;
+    rectButton.origin.y = 0;
+    
+    UIButton *leftButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    UIButton *rightButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [rightButtonItem addTarget:self action:@selector(pedirTaxi:) forControlEvents:UIControlEventTouchUpInside];
+    [rightButtonItem setFrame:rectButton];
+    [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"toolbar-pedir-taxi"] forState:UIControlStateNormal];
+    
+    [leftButtonItem addTarget:self action:@selector(verIncidenciasObras:) forControlEvents:UIControlEventTouchUpInside];
+    [leftButtonItem setFrame:rectButton];
+    [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"toolbar-incidentes"] forState:UIControlStateNormal];
+    
+    UIBarButtonItem * leftBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:leftButtonItem];
+    
+    UIBarButtonItem * rightBarButtonItem = [[UIBarButtonItem alloc]initWithCustomView:rightButtonItem];
+    
+    self.navigationItem.leftBarButtonItem = leftBarButtonItem;
+    self.navigationItem.rightBarButtonItem = rightBarButtonItem;
+
     [[SyncSingleton getInstance] initSync];
-    
-    
+}
+
+- (void) pedirTaxi:(id) sender
+{
+
+}
+
+- (void) verIncidenciasObras:(id) sender
+{
     
 }
 

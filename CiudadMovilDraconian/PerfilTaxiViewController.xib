@@ -180,19 +180,19 @@
 						<string key="NSFrame">{{15, 289}, {75, 75}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="759540773"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">condiciones2.png</string>
+							<string key="NSResourceName">evaluacion-condiciones.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="532575951">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{15, 203}, {92, 74}}</string>
+						<string key="NSFrame">{{15, 206}, {75, 58}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="869658819"/>
@@ -201,7 +201,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">trato2.png</string>
+							<string key="NSResourceName">evaluacion-trato.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="754526683">
@@ -216,7 +216,7 @@
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">volante 2.png</string>
+							<string key="NSResourceName">evaluacion-manejo.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="759540773">
@@ -273,6 +273,7 @@
 						<string key="NSFrame">{{247, 315}, {24, 24}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
+						<reference key="NSNextKeyView"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -691,10 +692,10 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="Fondo 1.png">{320, 460}</string>
-			<string key="condiciones2.png">{50, 50}</string>
 			<string key="estrella.png">{21, 20}</string>
-			<string key="trato2.png">{59, 38}</string>
-			<string key="volante 2.png">{50, 50}</string>
+			<string key="evaluacion-condiciones.png">{50, 50}</string>
+			<string key="evaluacion-manejo.png">{50, 50}</string>
+			<string key="evaluacion-trato.png">{59, 38}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
 	</data>

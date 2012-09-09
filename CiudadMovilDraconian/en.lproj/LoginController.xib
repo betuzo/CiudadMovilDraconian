@@ -151,7 +151,7 @@
 								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">Enter1.png</string>
+									<string key="NSResourceName">enter.png</string>
 								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription" id="747011388">
 									<int key="type">2</int>
@@ -450,8 +450,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="Enter1.png">{50, 51}</string>
 			<string key="Fondo 1.png">{320, 460}</string>
+			<string key="enter.png">{16, 16}</string>
 			<string key="login-boton-registro.png">{30, 30}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1181</string>
