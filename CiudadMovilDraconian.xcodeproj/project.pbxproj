@@ -555,11 +555,11 @@
 		59FA827815FB495F00A048A2 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				5989FCAB15FC501C004690EE /* MainViewController.h */,
+				5989FCAC15FC501C004690EE /* MainViewController.m */,
 				1568634C15FCBE9900380760 /* MalServicio */,
 				5989FCE815FC9C6D004690EE /* PerfilTaxi */,
 				5989FCE115FC9798004690EE /* IdentificarTaxi */,
-				5989FCAB15FC501C004690EE /* MainViewController.h */,
-				5989FCAC15FC501C004690EE /* MainViewController.m */,
 				59FA828915FB801300A048A2 /* Configuracion */,
 				59FA828715FB7FFF00A048A2 /* MiViaje */,
 				59FA828415FB7F3E00A048A2 /* TaxiSi */,

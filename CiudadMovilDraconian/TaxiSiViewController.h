@@ -22,5 +22,7 @@
 -(void)showUserLocation;
 -(void) addAnnotationTaxis;
 -(void) addAnnotationSitios;
+-(void) addAnnotationIncidentes;
+-(void) addAnnotationObras;
 
 @end

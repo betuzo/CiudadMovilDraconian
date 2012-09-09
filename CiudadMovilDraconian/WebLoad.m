@@ -55,8 +55,11 @@
     } 
     _resourceComplete = resourceWithParams;
     
-    [[RKObjectManager sharedManager].mappingProvider setObjectMapping:mapping forKeyPath:resourceWithParams];
-        
+    id obManger = [[RKObjectManager sharedManager].mappingProvider objectMappingForKeyPath:resourceWithParams];
+    
+    if(obManger == nil){
+        [[RKObjectManager sharedManager].mappingProvider setObjectMapping:mapping forKeyPath:resourceWithParams];
+    }
     [objectManager loadObjectsAtResourcePath:resourceWithParams delegate:self];
 }
 
