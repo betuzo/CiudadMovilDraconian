@@ -3,20 +3,20 @@
 	<data>
 		<int key="IBDocument.SystemTarget">1296</int>
 		<string key="IBDocument.SystemVersion">11E53</string>
-		<string key="IBDocument.InterfaceBuilderVersion">2182</string>
+		<string key="IBDocument.InterfaceBuilderVersion">2549</string>
 		<string key="IBDocument.AppKitVersion">1138.47</string>
 		<string key="IBDocument.HIToolboxVersion">569.00</string>
 		<object class="NSMutableDictionary" key="IBDocument.PluginVersions">
 			<string key="NS.key.0">com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-			<string key="NS.object.0">1181</string>
+			<string key="NS.object.0">1498</string>
 		</object>
 		<array key="IBDocument.IntegratedClassDependencies">
-			<string>IBUILabel</string>
+			<string>IBProxyObject</string>
 			<string>IBUIButton</string>
 			<string>IBUIImageView</string>
-			<string>IBUIView</string>
+			<string>IBUILabel</string>
 			<string>IBUITextField</string>
-			<string>IBProxyObject</string>
+			<string>IBUIView</string>
 		</array>
 		<array key="IBDocument.PluginDependencies">
 			<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -128,10 +128,9 @@
 							<object class="IBUIButton" id="1054125528">
 								<reference key="NSNextResponder" ref="223088169"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{137, 107}, {40, 40}}</string>
+								<string key="NSFrame">{{136, 107}, {40, 40}}</string>
 								<reference key="NSSuperview" ref="223088169"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -151,7 +150,7 @@
 								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">enter.png</string>
+									<string key="NSResourceName">enter-negro.png</string>
 								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription" id="747011388">
 									<int key="type">2</int>
@@ -220,13 +219,13 @@
 								<reference key="IBUINormalTitleShadowColor" ref="348595078"/>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">login-boton-registro.png</string>
+									<string key="NSResourceName">mas-negro.png</string>
 								</object>
 								<reference key="IBUIFontDescription" ref="747011388"/>
 								<reference key="IBUIFont" ref="188418811"/>
 							</object>
 						</array>
-						<string key="NSFrame">{{103, 77}, {197, 147}}</string>
+						<string key="NSFrame">{{103, 77}, {197, 159}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="908228287"/>
@@ -451,9 +450,9 @@
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
 			<string key="Fondo 1.png">{320, 460}</string>
-			<string key="enter.png">{16, 16}</string>
-			<string key="login-boton-registro.png">{30, 30}</string>
+			<string key="enter-negro.png">{50, 50}</string>
+			<string key="mas-negro.png">{50, 50}</string>
 		</dictionary>
-		<string key="IBCocoaTouchPluginVersion">1181</string>
+		<string key="IBCocoaTouchPluginVersion">1498</string>
 	</data>
 </archive>

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
-#import "MainViewController.h"
+#import "principalViewController.h"
 #import "LoginController.h"
 
 @interface RegistroController : UIViewController<RKObjectLoaderDelegate,UITextFieldDelegate>
