@@ -9,14 +9,15 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import "CiudadPinAnotation.h"
+#import "IdentificarTaxiViewController.h"
 
 @interface TaxiSiViewController : UIViewController <MKMapViewDelegate, MKAnnotation>
 {
     IBOutlet MKMapView *ciudadMapView;
 }
 @property (nonatomic, retain) IBOutlet MKMapView *ciudadMapView;
-@property (nonatomic, strong) UINavigationController *taxiSiNavigationController;
 
+-(IBAction)identificarTaxi:(id)sender;
 
 -(void)showUserLocation;
 -(void) addAnnotationTaxis;

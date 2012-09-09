@@ -17,7 +17,6 @@
 
 @implementation TaxiSiViewController
 
-@synthesize taxiSiNavigationController = _taxiSiNavigationController;
 
 @synthesize coordinate = _coordinate;
 
@@ -67,9 +66,14 @@
     [SyncSingleton getInstance].taxiSi = self;
 }
 
+-(IBAction)identificarTaxi:(id)sender{
+    IdentificarTaxiViewController *identificarTaxi = [[IdentificarTaxiViewController alloc] initWithNibName:nil bundle:nil];
+    [self presentModalViewController:identificarTaxi animated:YES];
+}
+
 - (void) pedirTaxi:(id) sender
 {
-
+    
 }
 
 - (void) verIncidenciasObras:(id) sender
