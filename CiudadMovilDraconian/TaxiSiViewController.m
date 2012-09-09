@@ -70,8 +70,8 @@
 }
 
 -(IBAction)identificarTaxi:(id)sender{
-    IdentificarTaxiViewController *identificarTaxi = [[IdentificarTaxiViewController alloc] initWithNibName:nil bundle:nil];
-    [self presentModalViewController:identificarTaxi animated:YES];
+    IdentificarTaxiViewController *identificarTaxi = [[IdentificarTaxiViewController alloc] initWithNibName:@"IdentificarTaxiViewController" bundle:nil];
+    [self.navigationController pushViewController:identificarTaxi animated:YES];
 }
 
 - (void) pedirTaxi:(id) sender

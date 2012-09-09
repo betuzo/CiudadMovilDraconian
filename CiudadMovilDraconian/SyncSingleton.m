@@ -75,18 +75,18 @@ static NSMutableDictionary * mappingsRest = nil;
 - (void) syncGeneral
 {
     if (_isFinish == YES || _iContSync == 0) {
-        /*if ([[TaxiSiService userLogged].role isEqualToString:@"USUARIO"]){
+        if ([[TaxiSiService userLogged].role isEqualToString:@"USUARIO"]){
             NSArray *params = [NSArray arrayWithObjects:
                             [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].latitude], 
                             [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].longitude],
                             nil];
-            [_webLoadTaxis loadWithResource:RESOURCE_GET_TAXIS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_TAXIS] andDelegate:self andParameter:params];
+            /*[_webLoadTaxis loadWithResource:RESOURCE_GET_TAXIS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_TAXIS] andDelegate:self andParameter:params];
             _iContSync = _iContSync + 1;
             
             params = [NSArray arrayWithObjects:
                                [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].latitude], 
                                [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].longitude],
-                               nil];
+                               nil];*/
             [_webLoadSitios loadWithResource:RESOURCE_GET_SITIOS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_SITIOS] andDelegate:self andParameter:params];
             _iContSync = _iContSync + 1;
         }
@@ -97,19 +97,20 @@ static NSMutableDictionary * mappingsRest = nil;
                                nil];
             [_webLoadTaxis loadWithResource:RESOURCE_GET_PASAJEROS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_PASAJEROS] andDelegate:self andParameter:params];
             _iContSync = _iContSync + 1;
-        }*/
+        }
         
         //_webLoadPasajerosCompartidos
-
+        /*
         NSArray *params = [NSArray arrayWithObjects:
                            [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].latitude], 
                            [[NSNumber alloc] initWithDouble:[TaxiSiService userLogged].longitude],
                            nil];
-        /*[_webLoadIncidencias loadWithResource:RESOURCE_GET_INCIDENTES andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_INCIDENTES] andDelegate:self andParameter:params];
-        _iContSync = _iContSync + 1;*/
+        [_webLoadIncidencias loadWithResource:RESOURCE_GET_INCIDENTES andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_INCIDENTES] andDelegate:self andParameter:params];
+        _iContSync = _iContSync + 1;
                
         [_webLoadObras loadWithResource:RESOURCE_GET_ORBRAS andMapping:[[SyncSingleton mappingsRest] valueForKeyPath:RESOURCE_GET_ORBRAS] andDelegate:self andParameter:params];
         _iContSync = _iContSync + 1;
+         */
     }
 }
 

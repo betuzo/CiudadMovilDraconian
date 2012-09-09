@@ -7,6 +7,8 @@
 //
 
 #import "IdentificarTaxiViewController.h"
+#import "TaxiSiViewController.h"
+#import "ConfigViewController.h"
 
 @interface IdentificarTaxiViewController ()
 
@@ -18,7 +20,7 @@
 
 -(IBAction)perfilTaxi:(id)sender{
     PerfilTaxiViewController *perfilTaxi = [[PerfilTaxiViewController alloc] initWithNibName:nil bundle:nil];
-    [self presentModalViewController:perfilTaxi animated:YES];
+    [self.navigationController pushViewController:perfilTaxi animated:YES];
 }
 
 
@@ -47,11 +49,11 @@
     
     UIButton *rightButtonItem = [UIButton buttonWithType:UIButtonTypeCustom];
     
-    [rightButtonItem addTarget:self action:@selector(pedirTaxi:) forControlEvents:UIControlEventTouchUpInside];
+    [rightButtonItem addTarget:self action:@selector(irPedirTaxi:) forControlEvents:UIControlEventTouchUpInside];
     [rightButtonItem setFrame:rectButton];
     [rightButtonItem setBackgroundImage:[UIImage imageNamed:@"toolbar-pedir-taxi"] forState:UIControlStateNormal];
     
-    [leftButtonItem addTarget:self action:@selector(verIncidenciasObras:) forControlEvents:UIControlEventTouchUpInside];
+    [leftButtonItem addTarget:self action:@selector(irConfiguracion:) forControlEvents:UIControlEventTouchUpInside];
     [leftButtonItem setFrame:rectButton];
     [leftButtonItem setBackgroundImage:[UIImage imageNamed:@"toolbar-config"] forState:UIControlStateNormal];
     
@@ -63,6 +65,18 @@
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 
     // Do any additional setup after loading the view from its nib.
+}
+
+-(void)irConfiguracion:(id)sender
+{
+    ConfigViewController *configController = [[ConfigViewController alloc] initWithNibName:@"ConfigViewController" bundle:nil];
+    [self.navigationController pushViewController:configController animated:YES];
+}
+
+-(void)irPedirTaxi:(id)sender
+{
+    TaxiSiViewController *taxiSiController = [[TaxiSiViewController alloc] initWithNibName:@"TaxiSiViewController" bundle:nil];
+    [self.navigationController pushViewController:taxiSiController animated:YES];    
 }
 
 - (void)viewDidUnload
