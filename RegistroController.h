@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
 #import "MainViewController.h"
+#import "LoginController.h"
 
 @interface RegistroController : UIViewController<RKObjectLoaderDelegate,UITextFieldDelegate>
 
@@ -20,6 +21,7 @@
 @property (strong, nonatomic) IBOutlet UIView *contentViewRegister;
 
 -(IBAction)submitRegister:(id)sender;
+-(IBAction)backLogin:(id)sender;
 -(void) moveToTopFields;
 -(void) moveToTopOriginFields;
 @end

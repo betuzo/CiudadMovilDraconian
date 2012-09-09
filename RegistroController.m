@@ -67,6 +67,12 @@
     }
 }
 
+-(IBAction)backLogin:(id)sender{
+    LoginController *login = [[LoginController alloc] initWithNibName:@"LoginController" bundle:nil];
+    [self presentModalViewController:login animated:YES];
+
+}
+
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
