@@ -103,7 +103,7 @@
 {
     if (response.success){
         [TaxiSiService userLogged:[response.data objectAtIndex:0]];
-        MainViewController *viewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
+        principalViewController *viewController = [[principalViewController alloc] initWithNibName:@"principalViewController" bundle:nil];
         [self presentModalViewController:viewController animated:YES];
     }else{
         UIAlertView *usageAlertView = [[UIAlertView alloc] initWithTitle:@"Login" message:response.message delegate:self cancelButtonTitle:@"Acept" otherButtonTitles:nil];
