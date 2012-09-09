@@ -60,6 +60,7 @@
     if(obManger == nil){
         [[RKObjectManager sharedManager].mappingProvider setObjectMapping:mapping forKeyPath:resourceWithParams];
     }
+
     [objectManager loadObjectsAtResourcePath:resourceWithParams delegate:self];
 }
 
