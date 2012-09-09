@@ -237,7 +237,7 @@
 								</object>
 							</object>
 						</array>
-						<string key="NSFrame">{{104, 75}, {209, 285}}</string>
+						<string key="NSFrame">{{111, 46}, {209, 285}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
@@ -444,6 +444,7 @@
 						</object>
 					</object>
 					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="contentViewRegister">UIView</string>
 						<string key="txtApellidos">UITextField</string>
 						<string key="txtEmail">UITextField</string>
 						<string key="txtNick">UITextField</string>
@@ -451,6 +452,10 @@
 						<string key="txtPassword">UITextField</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="contentViewRegister">
+							<string key="name">contentViewRegister</string>
+							<string key="candidateClassName">UIView</string>
+						</object>
 						<object class="IBToOneOutletInfo" key="txtApellidos">
 							<string key="name">txtApellidos</string>
 							<string key="candidateClassName">UITextField</string>

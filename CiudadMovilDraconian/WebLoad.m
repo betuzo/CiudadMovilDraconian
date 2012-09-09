@@ -23,8 +23,8 @@
     TSRequest *peticion = [objects objectAtIndex:0];
     
     NSString *info = [NSString stringWithFormat:
-                      @"peticion %@\n"
-                      @"Total Productos %@\n",
+                      @"peticion %c\n"
+                      @"Total Productos %u\n",
                       [peticion success] ,
                       [[peticion data] count]
                       ];

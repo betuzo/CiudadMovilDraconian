@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ConfigViewController.h"
 
 @interface ParentConfigViewController : UIViewController
+
+@property (nonatomic,strong) UINavigationController *configutarionNavigationController;
 
 @end

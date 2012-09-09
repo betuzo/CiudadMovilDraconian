@@ -38,7 +38,6 @@
 	[_taxiSiNavigationController.view setFrame:self.view.bounds];
     
 	[self.view addSubview:_taxiSiNavigationController.view];
-
 }
 
 - (void)viewDidUnload

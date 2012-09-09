@@ -14,6 +14,8 @@
 
 @implementation ParentConfigViewController
 
+@synthesize configutarionNavigationController = _configutarionNavigationController;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +29,15 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    ConfigViewController * confController = [[ConfigViewController alloc] initWithNibName:@"ConfigViewController" bundle:nil];
+    
+    _configutarionNavigationController =[[UINavigationController alloc] initWithRootViewController:confController];
+    
+    [_configutarionNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation-bar"] forBarMetrics:UIBarMetricsDefault];
+     
+    [self.view addSubview:_configutarionNavigationController.view];
+
 }
 
 - (void)viewDidUnload
