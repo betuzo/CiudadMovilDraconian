@@ -14,6 +14,8 @@
 
 @implementation TaxiSiViewController
 
+@synthesize taxiSiNavigationController = _taxiSiNavigationController;
+
 @synthesize coordinate = _coordinate;
 
 @synthesize ciudadMapView = _ciudadMapView;
@@ -31,6 +33,14 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    /*_taxiSiNavigationController = [[UINavigationController alloc] initWithRootViewController:self];
+    
+    [_taxiSiNavigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navigation-bar"] forBarMetrics:UIBarMetricsDefault];
+    
+	[_taxiSiNavigationController.view setFrame:self.view.bounds];
+    
+	[self.view addSubview:_taxiSiNavigationController.view];*/
 }
 
 - (void)viewDidUnload

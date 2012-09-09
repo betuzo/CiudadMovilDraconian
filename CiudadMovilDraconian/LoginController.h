@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <RestKit/RestKit.h>
-#import "MainTabViewController.h"
+#import "MainViewController.h"
 #import "RegistroController.h"
 #import "WebDelegate.h"
 #import "WebLoad.h"

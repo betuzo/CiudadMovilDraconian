@@ -1,5 +1,5 @@
 //
-//  ParentMiViajeViewController.h
+//  MainViewController.h
 //  CiudadMovilDraconian
 //
 //  Created by Mobiik on 08/09/12.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ParentMiViajeViewController : UIViewController
+@interface MainViewController : UIViewController
+
+@property (nonatomic,strong) UINavigationController *generalNavigationController;
 
 @end

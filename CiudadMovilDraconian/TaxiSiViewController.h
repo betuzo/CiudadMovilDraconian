@@ -12,10 +12,11 @@
 
 @interface TaxiSiViewController : UIViewController <MKMapViewDelegate, MKAnnotation>
 {
-	IBOutlet MKMapView *ciudadMapView;
+    IBOutlet MKMapView *ciudadMapView;
 }
+@property (nonatomic, retain) IBOutlet MKMapView *ciudadMapView;
+@property (nonatomic, strong) UINavigationController *taxiSiNavigationController;
 
-@property (nonatomic , strong) IBOutlet MKMapView *ciudadMapView;
 
 -(void)showUserLocation;
 

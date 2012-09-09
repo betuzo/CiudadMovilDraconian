@@ -56,7 +56,7 @@
 -(IBAction)submitRegister:(id)sender{
     if (![[_nombre text] isEqual:@""] && ![[_apellidos text] isEqual:@""] && ![[_email text] isEqual:@""] && ![[_nick text] isEqual:@""] && ![[_password text] isEqual:@""])
     {
-        MainTabViewController *mainViewController = [[MainTabViewController alloc] initWithNibName:@"MainTabViewController" bundle:nil];
+        MainViewController *mainViewController = [[MainViewController alloc] initWithNibName:@"MainViewController" bundle:nil];
         [self presentModalViewController:mainViewController animated:YES];
     }
     else
