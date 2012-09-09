@@ -8,6 +8,8 @@
 
 #import "TaxiSiViewController.h"
 #import "SyncSingleton.h"
+#import "TSTaxi.h"
+#import "TSSitio.h"
 
 @interface TaxiSiViewController ()
 
@@ -62,6 +64,7 @@
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 
     [[SyncSingleton getInstance] initSync];
+    [SyncSingleton getInstance].taxiSi = self;
 }
 
 - (void) pedirTaxi:(id) sender
@@ -103,20 +106,15 @@
     }
 	
 	if ([annotation isKindOfClass:[CiudadPinAnotation class]]) {
-		annotationView.image = [UIImage imageNamed:@"pinQ.png"];
+        CiudadPinAnotation * ciudadAnnotation = annotation;
+		annotationView.image = ciudadAnnotation.imageIcon;
 		annotationView.annotation = annotation;
 		annotationView.canShowCallout = YES;
-		UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-		annotationView.rightCalloutAccessoryView = rightButton;
-		
-		
 		return annotationView;
 	}
 	else{
 	    return nil;
 	}
-    
-	
 }
 
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control
@@ -145,5 +143,56 @@
     region.span = span;
     region.center = location;
     [_ciudadMapView setRegion:region animated:YES];    
+}
+
+-(void) addAnnotationSitios
+{
+    [self removeAnnotationByType:ANNOTATION_TYPE_SITIO];
+    for (TSSitio *element in [TaxiSiService sitios]) {
+        CLLocationCoordinate2D theCoordinate;
+        theCoordinate.latitude = element.latitude;
+        theCoordinate.longitude = element.longitude;
+        
+        CiudadPinAnotation* myAnnotation=[[CiudadPinAnotation alloc] init];
+        
+        myAnnotation.coordinate=theCoordinate;
+        myAnnotation.title = [NSString stringWithFormat:@"%@", element.nombre];
+        myAnnotation.description=[NSString stringWithFormat:@"%@", element.telefono];
+        myAnnotation.imageIcon = [TaxiSiService imageByTypeAnnotetion:ANNOTATION_TYPE_SITIO];
+        
+        [_ciudadMapView addAnnotation:myAnnotation];
+    }
+}
+
+-(void) addAnnotationTaxis
+{
+    [self removeAnnotationByType:ANNOTATION_TYPE_TAXI];
+    for (TSTaxi *element in [TaxiSiService taxis]) {
+        CLLocationCoordinate2D theCoordinate;
+        theCoordinate.latitude = element.latitude;
+        theCoordinate.longitude = element.longitude;
+        
+        CiudadPinAnotation* myAnnotation=[[CiudadPinAnotation alloc] init];
+        
+        myAnnotation.coordinate=theCoordinate;
+        myAnnotation.title = [NSString stringWithFormat:@"%@ - %@", element.placas, element.vehiculo];
+        myAnnotation.description=[NSString stringWithFormat:@"%@ - %@", element.placas, element.vehiculo];
+        myAnnotation.imageIcon = [TaxiSiService imageByTypeAnnotetion:ANNOTATION_TYPE_TAXI];
+        
+        [_ciudadMapView addAnnotation:myAnnotation];
+    }
+}
+
+-(void) removeAnnotationByType:(NSString *) type
+{
+    NSMutableArray *toRemove = [[NSMutableArray alloc] init];
+    for (id annotation in _ciudadMapView.annotations){
+        if ([annotation isKindOfClass:[CiudadPinAnotation class]]){
+            CiudadPinAnotation *annotationCiudad = annotation;
+            if([annotationCiudad.type isEqualToString:type]) 
+                [toRemove addObject:annotation];
+        }
+    }
+    [_ciudadMapView removeAnnotations:toRemove];
 }
 @end

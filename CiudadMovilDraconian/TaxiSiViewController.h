@@ -19,5 +19,7 @@
 
 
 -(void)showUserLocation;
+-(void) addAnnotationTaxis;
+-(void) addAnnotationSitios;
 
 @end

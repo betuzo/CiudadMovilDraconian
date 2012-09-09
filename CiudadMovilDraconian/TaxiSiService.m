@@ -52,9 +52,24 @@ static TSUser * userLogged = nil;
 {
     return timeForSync;
 }
++ (UIImage *) imageByTypeAnnotetion:(NSString *) type
+{
+    if ([type isEqualToString:ANNOTATION_TYPE_TAXI])
+        return [UIImage imageNamed:@"annotation-taxi"];
+    if ([type isEqualToString:ANNOTATION_TYPE_PASAJERO])
+        return [UIImage imageNamed:@"annotation-pasajero"];
+    if ([type isEqualToString:ANNOTATION_TYPE_PASAJERO_COMPARTIDO])
+        return [UIImage imageNamed:@"annotation-pasajero-compartido"];
+    if ([type isEqualToString:ANNOTATION_TYPE_INCIDENTE])
+        return [UIImage imageNamed:@"annotation-incidente"];
+    if ([type isEqualToString:ANNOTATION_TYPE_OBRA])
+        return [UIImage imageNamed:@"annotation-obra"];
+    if ([type isEqualToString:ANNOTATION_TYPE_SITIO])
+        return [UIImage imageNamed:@"annotation-sitio"];
+    return nil;
+}
 
-
-+ (void) pasajero:(NSArray *) newPasajeros
++ (void) pasajeros:(NSArray *) newPasajeros
 {
     pasajeros = newPasajeros;
 }

@@ -18,4 +18,9 @@
 @synthesize longitude = _longitude;
 @synthesize latitude = _latitude;
 
+- (NSString *) description
+{
+    return _placas;
+}
+
 @end

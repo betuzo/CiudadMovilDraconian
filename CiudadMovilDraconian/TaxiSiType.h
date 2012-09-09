@@ -30,6 +30,22 @@ extern NSString *const RESOURCE_GET_INCIDENTES; // Servicio Rest para obtener In
 
 extern NSString *const RESOURCE_GET_ORBRAS; // Servicio Rest para obtener Ordenes
 
+extern NSString *const RESOURCE_GET_SITIOS; // Servicio Rest para obtener Ordenes
+
 extern NSString *const RESOURCE_BASE; // Servicio Rest para obtener Ordenes
+
+// Tipos de Anotaciones en el mmapa
+
+extern NSString *const ANNOTATION_TYPE_TAXI;
+
+extern NSString *const ANNOTATION_TYPE_PASAJERO;
+
+extern NSString *const ANNOTATION_TYPE_PASAJERO_COMPARTIDO;
+
+extern NSString *const ANNOTATION_TYPE_INCIDENTE;
+
+extern NSString *const ANNOTATION_TYPE_OBRA;
+
+extern NSString *const ANNOTATION_TYPE_SITIO;
 
 @end

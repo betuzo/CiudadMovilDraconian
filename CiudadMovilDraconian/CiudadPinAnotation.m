@@ -14,8 +14,12 @@
 
 @synthesize type = _type;
 
+@synthesize title = _title;
+
+@synthesize subtitle = _subtitle;
+
 @synthesize description = _description;
 
-@synthesize icon = _icon;
+@synthesize imageIcon = _imageIcon;
 
 @end

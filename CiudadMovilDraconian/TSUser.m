@@ -21,4 +21,9 @@
 @synthesize verIncidentes = _verIncidentes;
 @synthesize verComprtidos = _verComprtidos;
 
+- (NSString *) description
+{
+    return _nickname;
+}
+
 @end

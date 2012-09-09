@@ -19,8 +19,9 @@
 + (NSArray *) sitios;
 + (TSUser *) userLogged;
 + (long) timeForSync;
++ (UIImage *) imageByTypeAnnotetion:(NSString *) type;
 
-+ (void) pasajero:(NSArray *) newPasajeros;
++ (void) pasajeros:(NSArray *) newPasajeros;
 + (void) taxis:(NSArray *) newTaxis;
 + (void) pasajerosCompartidos:(NSArray *) newPasajerosCompartidos;
 + (void) incidentes:(NSArray *) newIncidentes;

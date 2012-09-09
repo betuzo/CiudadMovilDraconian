@@ -15,8 +15,12 @@
 
 @property (nonatomic ,strong) NSString * type;
 
+@property (nonatomic ,copy) NSString * title;
+
+@property (nonatomic ,copy) NSString * subtitle;
+
 @property (nonatomic ,strong) NSString * description;
 
-@property (nonatomic ,strong) UIImage * icon;
+@property (nonatomic ,strong) UIImage * imageIcon;
 
 @end

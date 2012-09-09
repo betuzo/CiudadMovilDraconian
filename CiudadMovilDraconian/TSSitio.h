@@ -10,6 +10,7 @@
 
 @interface TSSitio : NSObject
 
+@property (nonatomic) long id;
 @property (nonatomic, strong) UIImage *type;
 @property (nonatomic, strong) NSString *nombre;
 @property (nonatomic, strong) NSString *telefono;

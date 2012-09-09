@@ -64,6 +64,12 @@
 		5989FCEE15FC9EC6004690EE /* evaluacion-manejo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCED15FC9EC4004690EE /* evaluacion-manejo.png */; };
 		5989FCF015FC9F56004690EE /* estrella.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCEF15FC9F53004690EE /* estrella.png */; };
 		5989FCF215FCA9C4004690EE /* navigation-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCF115FCA9C1004690EE /* navigation-bar.png */; };
+		5989FD0A15FCBA7A004690EE /* annotation-incidente.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FD0415FCBA7A004690EE /* annotation-incidente.png */; };
+		5989FD0B15FCBA7A004690EE /* annotation-obra.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FD0515FCBA7A004690EE /* annotation-obra.png */; };
+		5989FD0C15FCBA7A004690EE /* annotation-pasajero-compartido.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FD0615FCBA7A004690EE /* annotation-pasajero-compartido.png */; };
+		5989FD0D15FCBA7A004690EE /* annotation-pasajero.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FD0715FCBA7A004690EE /* annotation-pasajero.png */; };
+		5989FD0E15FCBA7A004690EE /* annotation-sitio.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FD0815FCBA7A004690EE /* annotation-sitio.png */; };
+		5989FD0F15FCBA7A004690EE /* annotation-taxi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FD0915FCBA7A004690EE /* annotation-taxi.png */; };
 		59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827915FB501900A048A2 /* taxi-si-launch.png */; };
 		59FA827C15FB502500A048A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827B15FB502500A048A2 /* Default.png */; };
 		59FA829215FB806300A048A2 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA829015FB806300A048A2 /* ConfigViewController.m */; };
@@ -211,6 +217,12 @@
 		5989FCED15FC9EC4004690EE /* evaluacion-manejo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evaluacion-manejo.png"; sourceTree = "<group>"; };
 		5989FCEF15FC9F53004690EE /* estrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estrella.png; sourceTree = "<group>"; };
 		5989FCF115FCA9C1004690EE /* navigation-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-bar.png"; sourceTree = "<group>"; };
+		5989FD0415FCBA7A004690EE /* annotation-incidente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "annotation-incidente.png"; sourceTree = "<group>"; };
+		5989FD0515FCBA7A004690EE /* annotation-obra.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "annotation-obra.png"; sourceTree = "<group>"; };
+		5989FD0615FCBA7A004690EE /* annotation-pasajero-compartido.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "annotation-pasajero-compartido.png"; sourceTree = "<group>"; };
+		5989FD0715FCBA7A004690EE /* annotation-pasajero.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "annotation-pasajero.png"; sourceTree = "<group>"; };
+		5989FD0815FCBA7A004690EE /* annotation-sitio.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "annotation-sitio.png"; sourceTree = "<group>"; };
+		5989FD0915FCBA7A004690EE /* annotation-taxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "annotation-taxi.png"; sourceTree = "<group>"; };
 		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
 		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		59FA828F15FB806300A048A2 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
@@ -391,6 +403,12 @@
 		593FAE1515FB405800CA156A /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				5989FD0415FCBA7A004690EE /* annotation-incidente.png */,
+				5989FD0515FCBA7A004690EE /* annotation-obra.png */,
+				5989FD0615FCBA7A004690EE /* annotation-pasajero-compartido.png */,
+				5989FD0715FCBA7A004690EE /* annotation-pasajero.png */,
+				5989FD0815FCBA7A004690EE /* annotation-sitio.png */,
+				5989FD0915FCBA7A004690EE /* annotation-taxi.png */,
 				5989FCF115FCA9C1004690EE /* navigation-bar.png */,
 				59FA827B15FB502500A048A2 /* Default.png */,
 				59FA827915FB501900A048A2 /* taxi-si-launch.png */,
@@ -723,6 +741,12 @@
 				5989FCEE15FC9EC6004690EE /* evaluacion-manejo.png in Resources */,
 				5989FCF015FC9F56004690EE /* estrella.png in Resources */,
 				5989FCF215FCA9C4004690EE /* navigation-bar.png in Resources */,
+				5989FD0A15FCBA7A004690EE /* annotation-incidente.png in Resources */,
+				5989FD0B15FCBA7A004690EE /* annotation-obra.png in Resources */,
+				5989FD0C15FCBA7A004690EE /* annotation-pasajero-compartido.png in Resources */,
+				5989FD0D15FCBA7A004690EE /* annotation-pasajero.png in Resources */,
+				5989FD0E15FCBA7A004690EE /* annotation-sitio.png in Resources */,
+				5989FD0F15FCBA7A004690EE /* annotation-taxi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
