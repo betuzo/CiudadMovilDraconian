@@ -35,6 +35,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [[SyncSingleton getInstance] initSync];
+    
+    
+    
 }
 
 - (void)viewDidUnload
@@ -43,6 +46,8 @@
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
     [[SyncSingleton getInstance] endSync];
+    
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation

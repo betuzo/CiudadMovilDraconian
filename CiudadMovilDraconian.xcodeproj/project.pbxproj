@@ -51,6 +51,8 @@
 		5989FC7F15FBD779004690EE /* TaxiSiType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC7E15FBD779004690EE /* TaxiSiType.m */; };
 		5989FC8215FBEFD2004690EE /* WebLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC8115FBEFD2004690EE /* WebLoad.m */; };
 		5989FCAE15FC501C004690EE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FCAC15FC501C004690EE /* MainViewController.m */; };
+		5989FCCC15FC7AFC004690EE /* toolbar-incidentes.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCCA15FC7AFC004690EE /* toolbar-incidentes.png */; };
+		5989FCCD15FC7AFC004690EE /* toolbar-pedir-taxi.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCCB15FC7AFC004690EE /* toolbar-pedir-taxi.png */; };
 		59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827915FB501900A048A2 /* taxi-si-launch.png */; };
 		59FA827C15FB502500A048A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827B15FB502500A048A2 /* Default.png */; };
 		59FA829215FB806300A048A2 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA829015FB806300A048A2 /* ConfigViewController.m */; };
@@ -183,6 +185,8 @@
 		5989FCAB15FC501C004690EE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		5989FCAC15FC501C004690EE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		5989FCAD15FC501C004690EE /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		5989FCCA15FC7AFC004690EE /* toolbar-incidentes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-incidentes.png"; sourceTree = "<group>"; };
+		5989FCCB15FC7AFC004690EE /* toolbar-pedir-taxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-pedir-taxi.png"; sourceTree = "<group>"; };
 		59FA827915FB501900A048A2 /* taxi-si-launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "taxi-si-launch.png"; sourceTree = "<group>"; };
 		59FA827B15FB502500A048A2 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
 		59FA828F15FB806300A048A2 /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigViewController.h; sourceTree = "<group>"; };
@@ -364,6 +368,8 @@
 				59FA827B15FB502500A048A2 /* Default.png */,
 				59FA827915FB501900A048A2 /* taxi-si-launch.png */,
 				153AAB7A15FC4D6D0060C47F /* enter.png */,
+				5989FCCA15FC7AFC004690EE /* toolbar-incidentes.png */,
+				5989FCCB15FC7AFC004690EE /* toolbar-pedir-taxi.png */,
 				153AAB8F15FC58F10060C47F /* Enter1.png */,
 				153AAB9015FC58F10060C47F /* Return.png */,
 				153AAB7815FC4D2D0060C47F /* Fondo 1.png */,
@@ -637,6 +643,8 @@
 				153AAB8115FC502D0060C47F /* login-boton-registro.png in Resources */,
 				153AAB9115FC58F10060C47F /* Enter1.png in Resources */,
 				153AAB9215FC58F10060C47F /* Return.png in Resources */,
+				5989FCCC15FC7AFC004690EE /* toolbar-incidentes.png in Resources */,
+				5989FCCD15FC7AFC004690EE /* toolbar-pedir-taxi.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
