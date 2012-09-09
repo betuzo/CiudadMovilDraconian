@@ -102,7 +102,7 @@
 								<string key="NSFrame">{{26, 70}, {150, 31}}</string>
 								<reference key="NSSuperview" ref="223088169"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="1054125528"/>
+								<reference key="NSNextKeyView" ref="840080663"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -128,9 +128,10 @@
 							<object class="IBUIButton" id="1054125528">
 								<reference key="NSNextResponder" ref="223088169"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{148, 110}, {29, 31}}</string>
+								<string key="NSFrame">{{146, 109}, {30, 30}}</string>
 								<reference key="NSSuperview" ref="223088169"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -150,7 +151,7 @@
 								</object>
 								<object class="NSCustomResource" key="IBUINormalImage">
 									<string key="NSClassName">NSImage</string>
-									<string key="NSResourceName">enter.png</string>
+									<string key="NSResourceName">Enter1.png</string>
 								</object>
 								<object class="IBUIFontDescription" key="IBUIFontDescription" id="747011388">
 									<int key="type">2</int>
@@ -202,9 +203,10 @@
 							<object class="IBUIButton" id="840080663">
 								<reference key="NSNextResponder" ref="223088169"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{26, 109}, {29, 31}}</string>
+								<string key="NSFrame">{{26, 109}, {30, 30}}</string>
 								<reference key="NSSuperview" ref="223088169"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="1054125528"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -335,9 +337,9 @@
 						<reference key="object" ref="223088169"/>
 						<array class="NSMutableArray" key="children">
 							<reference ref="84613809"/>
-							<reference ref="1054125528"/>
 							<reference ref="908228287"/>
 							<reference ref="1000316776"/>
+							<reference ref="1054125528"/>
 							<reference ref="840080663"/>
 						</array>
 						<reference key="parent" ref="774585933"/>
@@ -358,11 +360,6 @@
 						<reference key="parent" ref="223088169"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">27</int>
-						<reference key="object" ref="523967946"/>
-						<reference key="parent" ref="774585933"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">34</int>
 						<reference key="object" ref="908228287"/>
 						<reference key="parent" ref="223088169"/>
@@ -371,6 +368,11 @@
 						<int key="objectID">35</int>
 						<reference key="object" ref="840080663"/>
 						<reference key="parent" ref="223088169"/>
+					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">27</int>
+						<reference key="object" ref="523967946"/>
+						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
 			</object>
@@ -448,8 +450,8 @@
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
 		<dictionary class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
+			<string key="Enter1.png">{50, 51}</string>
 			<string key="Fondo 1.png">{320, 460}</string>
-			<string key="enter.png">{50, 50}</string>
 			<string key="login-boton-registro.png">{30, 30}</string>
 		</dictionary>
 		<string key="IBCocoaTouchPluginVersion">1498</string>
