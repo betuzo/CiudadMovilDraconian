@@ -15,6 +15,13 @@
 		155F269015FD17B800994A5B /* fondo4.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F268C15FD17B800994A5B /* fondo4.png */; };
 		155F269115FD17B800994A5B /* mas-negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F268D15FD17B800994A5B /* mas-negro.png */; };
 		155F269215FD17B800994A5B /* tweet.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F268E15FD17B800994A5B /* tweet.png */; };
+		155F269415FD1A0A00994A5B /* avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F269315FD1A0A00994A5B /* avatar.png */; };
+		155F269615FD1E7F00994A5B /* evaluacion-condiciones.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F269515FD1E7F00994A5B /* evaluacion-condiciones.png */; };
+		155F269815FD1E9C00994A5B /* evaluacion-manejo.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F269715FD1E9C00994A5B /* evaluacion-manejo.png */; };
+		155F269A15FD1EB800994A5B /* evaluacion-trato.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F269915FD1EB800994A5B /* evaluacion-trato.png */; };
+		155F269C15FD204300994A5B /* estrella-verde.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F269B15FD204300994A5B /* estrella-verde.png */; };
+		155F269E15FD204C00994A5B /* fondo5.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F269D15FD204C00994A5B /* fondo5.png */; };
+		155F26A015FD21EA00994A5B /* return-negro.png in Resources */ = {isa = PBXBuildFile; fileRef = 155F269F15FD21EA00994A5B /* return-negro.png */; };
 		1568633F15FCB3A800380760 /* identificar-taxi.png in Resources */ = {isa = PBXBuildFile; fileRef = 1568633E15FCB3A800380760 /* identificar-taxi.png */; };
 		1568634115FCB9ED00380760 /* toolbar-config.png in Resources */ = {isa = PBXBuildFile; fileRef = 1568634015FCB9ED00380760 /* toolbar-config.png */; };
 		1568634315FCBD9600380760 /* Fondo-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1568634215FCBD9500380760 /* Fondo-2.png */; };
@@ -71,9 +78,6 @@
 		5989FCE015FC978D004690EE /* IdentificarTaxiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCDE15FC978D004690EE /* IdentificarTaxiViewController.xib */; };
 		5989FCE615FC9C63004690EE /* PerfilTaxiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FCE415FC9C63004690EE /* PerfilTaxiViewController.m */; };
 		5989FCE715FC9C63004690EE /* PerfilTaxiViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCE515FC9C63004690EE /* PerfilTaxiViewController.xib */; };
-		5989FCEA15FC9E9A004690EE /* evaluacion-condiciones.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCE915FC9E99004690EE /* evaluacion-condiciones.png */; };
-		5989FCEC15FC9EAE004690EE /* evaluacion-trato.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCEB15FC9EAC004690EE /* evaluacion-trato.png */; };
-		5989FCEE15FC9EC6004690EE /* evaluacion-manejo.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCED15FC9EC4004690EE /* evaluacion-manejo.png */; };
 		5989FCF015FC9F56004690EE /* estrella.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCEF15FC9F53004690EE /* estrella.png */; };
 		5989FCF215FCA9C4004690EE /* navigation-bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCF115FCA9C1004690EE /* navigation-bar.png */; };
 		5989FD0A15FCBA7A004690EE /* annotation-incidente.png in Resources */ = {isa = PBXBuildFile; fileRef = 5989FD0415FCBA7A004690EE /* annotation-incidente.png */; };
@@ -153,6 +157,13 @@
 		155F268C15FD17B800994A5B /* fondo4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo4.png; sourceTree = "<group>"; };
 		155F268D15FD17B800994A5B /* mas-negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mas-negro.png"; sourceTree = "<group>"; };
 		155F268E15FD17B800994A5B /* tweet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tweet.png; sourceTree = "<group>"; };
+		155F269315FD1A0A00994A5B /* avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatar.png; sourceTree = "<group>"; };
+		155F269515FD1E7F00994A5B /* evaluacion-condiciones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evaluacion-condiciones.png"; sourceTree = "<group>"; };
+		155F269715FD1E9C00994A5B /* evaluacion-manejo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evaluacion-manejo.png"; sourceTree = "<group>"; };
+		155F269915FD1EB800994A5B /* evaluacion-trato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evaluacion-trato.png"; sourceTree = "<group>"; };
+		155F269B15FD204300994A5B /* estrella-verde.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "estrella-verde.png"; sourceTree = "<group>"; };
+		155F269D15FD204C00994A5B /* fondo5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo5.png; sourceTree = "<group>"; };
+		155F269F15FD21EA00994A5B /* return-negro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "return-negro.png"; sourceTree = "<group>"; };
 		1568633E15FCB3A800380760 /* identificar-taxi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "identificar-taxi.png"; sourceTree = "<group>"; };
 		1568634015FCB9ED00380760 /* toolbar-config.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "toolbar-config.png"; sourceTree = "<group>"; };
 		1568634215FCBD9500380760 /* Fondo-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Fondo-2.png"; sourceTree = "<group>"; };
@@ -234,9 +245,6 @@
 		5989FCE315FC9C63004690EE /* PerfilTaxiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PerfilTaxiViewController.h; sourceTree = "<group>"; };
 		5989FCE415FC9C63004690EE /* PerfilTaxiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PerfilTaxiViewController.m; sourceTree = "<group>"; };
 		5989FCE515FC9C63004690EE /* PerfilTaxiViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PerfilTaxiViewController.xib; sourceTree = "<group>"; };
-		5989FCE915FC9E99004690EE /* evaluacion-condiciones.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evaluacion-condiciones.png"; sourceTree = "<group>"; };
-		5989FCEB15FC9EAC004690EE /* evaluacion-trato.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evaluacion-trato.png"; sourceTree = "<group>"; };
-		5989FCED15FC9EC4004690EE /* evaluacion-manejo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "evaluacion-manejo.png"; sourceTree = "<group>"; };
 		5989FCEF15FC9F53004690EE /* estrella.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = estrella.png; sourceTree = "<group>"; };
 		5989FCF115FCA9C1004690EE /* navigation-bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "navigation-bar.png"; sourceTree = "<group>"; };
 		5989FD0415FCBA7A004690EE /* annotation-incidente.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "annotation-incidente.png"; sourceTree = "<group>"; };
@@ -450,16 +458,20 @@
 				59FA827915FB501900A048A2 /* taxi-si-launch.png */,
 				5989FCCE15FC8ACE004690EE /* Fondo 3.png */,
 				1568633E15FCB3A800380760 /* identificar-taxi.png */,
-				5989FCEB15FC9EAC004690EE /* evaluacion-trato.png */,
 				5989FCEF15FC9F53004690EE /* estrella.png */,
-				5989FCED15FC9EC4004690EE /* evaluacion-manejo.png */,
-				5989FCE915FC9E99004690EE /* evaluacion-condiciones.png */,
 				155F268B15FD17B800994A5B /* enter-negro.png */,
+				155F269315FD1A0A00994A5B /* avatar.png */,
+				155F269915FD1EB800994A5B /* evaluacion-trato.png */,
+				155F269715FD1E9C00994A5B /* evaluacion-manejo.png */,
 				155F268C15FD17B800994A5B /* fondo4.png */,
 				155F268D15FD17B800994A5B /* mas-negro.png */,
+				155F269D15FD204C00994A5B /* fondo5.png */,
+				155F269515FD1E7F00994A5B /* evaluacion-condiciones.png */,
 				155F268E15FD17B800994A5B /* tweet.png */,
 				1568634015FCB9ED00380760 /* toolbar-config.png */,
 				1568634D15FCBF0900380760 /* otro.png */,
+				155F269F15FD21EA00994A5B /* return-negro.png */,
+				155F269B15FD204300994A5B /* estrella-verde.png */,
 				5989FCCA15FC7AFC004690EE /* toolbar-incidentes.png */,
 				1568634215FCBD9500380760 /* Fondo-2.png */,
 				5989FCCB15FC7AFC004690EE /* toolbar-pedir-taxi.png */,
@@ -763,9 +775,6 @@
 				5989FCD115FC8C24004690EE /* toolbar-usuario.png in Resources */,
 				5989FCE015FC978D004690EE /* IdentificarTaxiViewController.xib in Resources */,
 				5989FCE715FC9C63004690EE /* PerfilTaxiViewController.xib in Resources */,
-				5989FCEA15FC9E9A004690EE /* evaluacion-condiciones.png in Resources */,
-				5989FCEC15FC9EAE004690EE /* evaluacion-trato.png in Resources */,
-				5989FCEE15FC9EC6004690EE /* evaluacion-manejo.png in Resources */,
 				5989FCF015FC9F56004690EE /* estrella.png in Resources */,
 				5989FCF215FCA9C4004690EE /* navigation-bar.png in Resources */,
 				5989FD0A15FCBA7A004690EE /* annotation-incidente.png in Resources */,
@@ -785,6 +794,13 @@
 				155F269015FD17B800994A5B /* fondo4.png in Resources */,
 				155F269115FD17B800994A5B /* mas-negro.png in Resources */,
 				155F269215FD17B800994A5B /* tweet.png in Resources */,
+				155F269415FD1A0A00994A5B /* avatar.png in Resources */,
+				155F269615FD1E7F00994A5B /* evaluacion-condiciones.png in Resources */,
+				155F269815FD1E9C00994A5B /* evaluacion-manejo.png in Resources */,
+				155F269A15FD1EB800994A5B /* evaluacion-trato.png in Resources */,
+				155F269C15FD204300994A5B /* estrella-verde.png in Resources */,
+				155F269E15FD204C00994A5B /* fondo5.png in Resources */,
+				155F26A015FD21EA00994A5B /* return-negro.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
