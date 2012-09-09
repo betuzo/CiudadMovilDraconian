@@ -24,11 +24,7 @@
 - (void)objectLoader:(RKObjectLoader *)objectLoader didLoadObjects:(NSArray *)objects
 {
     TSResponse *respuesta = [objects objectAtIndex:0];
-<<<<<<< HEAD
-    [_delegate modelLoadCompletedWithResponse:respuesta];  
-=======
     [_delegate modelLoadCompletedWithResponse:respuesta];
->>>>>>> 0c591caf722471003aa5b1225f16861404f95f6e
 }
 
 - (void)objectLoader:(RKObjectLoader *)objectLoader didFailWithError:(NSError *)error

@@ -49,7 +49,6 @@
 		5989FC7F15FBD779004690EE /* TaxiSiType.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC7E15FBD779004690EE /* TaxiSiType.m */; };
 		5989FC8215FBEFD2004690EE /* WebLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FC8115FBEFD2004690EE /* WebLoad.m */; };
 		5989FCAE15FC501C004690EE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5989FCAC15FC501C004690EE /* MainViewController.m */; };
-		5989FCAF15FC501C004690EE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5989FCAD15FC501C004690EE /* MainViewController.xib */; };
 		59FA827A15FB501900A048A2 /* taxi-si-launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827915FB501900A048A2 /* taxi-si-launch.png */; };
 		59FA827C15FB502500A048A2 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59FA827B15FB502500A048A2 /* Default.png */; };
 		59FA829215FB806300A048A2 /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59FA829015FB806300A048A2 /* ConfigViewController.m */; };
@@ -627,15 +626,9 @@
 				59FA829D15FB80B500A048A2 /* MiViajeViewController.xib in Resources */,
 				59FA82A715FB810B00A048A2 /* TaxiSiViewController.xib in Resources */,
 				15F4D46115FBBC9B00B79574 /* RegistroController.xib in Resources */,
-<<<<<<< HEAD
 				153AAB7915FC4D2D0060C47F /* Fondo 1.png in Resources */,
 				153AAB7B15FC4D6D0060C47F /* enter.png in Resources */,
 				153AAB8115FC502D0060C47F /* login-boton-registro.png in Resources */,
-=======
-				15F4D47615FBF00400B79574 /* login-boton-registro.png in Resources */,
-				15B59C6715FC0B4200579521 /* usr.png in Resources */,
-				5989FCAF15FC501C004690EE /* MainViewController.xib in Resources */,
->>>>>>> 0c591caf722471003aa5b1225f16861404f95f6e
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
