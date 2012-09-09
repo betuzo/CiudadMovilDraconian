@@ -58,8 +58,9 @@ static NSMutableDictionary * mappingsRest = nil;
 
 - (void) syncGeneral
 {
-    
-    _isFinish = YES;
+    if (_isFinish == NO) {
+        _isFinish = YES;
+    }
 }
 
 - (void)reachabilityChanged:(NSNotification*)notification {
@@ -132,10 +133,12 @@ static NSMutableDictionary * mappingsRest = nil;
     
     objetoMapping = [RKObjectMapping mappingForClass:[TSTaxi class]];
     [objetoMapping mapKeyPath:@"id" toAttribute:@"id"];
-    [objetoMapping mapKeyPath:@"nick" toAttribute:@"nickname"];
-    [objetoMapping mapKeyPath:@"password" toAttribute:@"password"];
-    [objetoMapping mapKeyPath:@"role" toAttribute:@"role"];
-    
+    [objetoMapping mapKeyPath:@"latitude" toAttribute:@"latitude"];
+    [objetoMapping mapKeyPath:@"longitude" toAttribute:@"longitude"];
+    [objetoMapping mapKeyPath:@"placas" toAttribute:@"placas"];
+    [objetoMapping mapKeyPath:@"vehiculo" toAttribute:@"vehiculo"];
+    [objetoMapping mapKeyPath:@"tipo" toAttribute:@"tipo"];
+
     respuesta = [RKObjectMapping mappingForClass:[TSResponse class]];
     [respuesta mapKeyPath:@"success" toAttribute:@"success"];
     [respuesta mapKeyPath:@"message" toAttribute:@"message"];

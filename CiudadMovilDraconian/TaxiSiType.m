@@ -17,7 +17,7 @@ long const CONFIG_SYNC_INTERVAL_WIFI = 20;
 
 NSString *const RESOURCE_FOR_SECURE = @"/taxisi-backend/api/usuario/login/";
 
-NSString *const RESOURCE_GET_TAXIS = @"/taxisi-backend/api/taxi/";
+NSString *const RESOURCE_GET_TAXIS = @"/taxisi-backend/api/taxi/ubicacion/";
 
 NSString *const RESOURCE_GET_PASAJEROS = @"/taxisi-backend/api/pasajero/";
 
